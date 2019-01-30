@@ -1,0 +1,511 @@
+body {
+  margin: 0 auto;
+  text-align: middle;
+  background-attachment: fixed;
+  /* background: linear-gradient(rgb(149, 185, 240), #f1d4f1); */
+  background: white;
+  background-image: url('andere_foto/image-46448313-navy-blue-background.jpg');
+  /* 'https://www.toptal.com/designers/subtlepatterns/patterns/gravel.png'); */
+  /* 'https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3119999.jpg'); */
+  /* 'https://us.123rf.com/450wm/zinako/zinako1708/zinako170800997/85402279-seamless-abstract-blue-pattern-with-simple-elegant-stripes-can-be-used-for-wallpaper-pattern-fills-g.jpg?ver=6'); */
+  /* 'https://blog.visme.co/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-045.jpg'); */
+  background-size: normal;
+  background-position-x: 10em;
+  animation: background-image linear 800s infinite forwards;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+.font-alt {
+  font-family: 'K2D', sans-serif;
+}
+
+.has-text-header {
+  color: #e66f4a;
+  font-weight: bold;
+}
+
+#container {
+  padding: 2em 15px 8em;
+}
+
+div {
+  display: block;
+}
+
+a {
+  color: #e66f4a;
+}
+
+.icon {
+  font-size: 350%;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  /* background-color: #314c80e7; */
+  background: #f2f2f2EF;
+  display: flex;
+  z-index: 35;
+  box-shadow: 0px 1px 8px #47464699;
+}
+
+.fullscreen-header {
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  background-color: cornflowerblue;
+  /* background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/EvVhCC0deijtsl1b4/videoblocks-programming-code-background-abstract-seamless-loop-animation_bklmxmhjw_thumbnail-full01.png'); */
+  /* background-image: url('wallpaper.jpg'); */
+  /* background-image: url('./code-wallpaper-38.jpg'); */
+  background-image: url('andere_foto/20181111_140228.jpg');
+  background-size: cover;
+  background-blend-mode: multiply;
+
+  background-position: center;
+}
+
+.header_arrow_wrapper {
+  position: absolute;
+  bottom: 10px;
+  font-size: 150%;
+  animation: hovering 1.2s infinite;
+}
+
+#header_arrow {
+  cursor: pointer;
+}
+
+@keyframes hovering {
+  from {
+    bottom: 10px;
+  }
+
+  75% {
+    bottom: 20px;
+  }
+
+  to {
+    bottom: 10px;
+  }
+}
+
+.text-vertical-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: white;
+  /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 3px 3px black; */
+  text-shadow: 4px 4px 4px black;
+}
+
+.text-vertical-center>* {
+  width: 100%;
+}
+
+
+.subtitle {
+  font-family: 'K2D', sans-serif;
+  color: black !important;
+  font-weight: bold;
+}
+
+.link {
+  text-decoration: none;
+  float: left;
+  flex-grow: 1;
+  text-align: center;
+  color: black;
+  padding: 1em 0;
+}
+
+.link:hover {
+  background-color: #00000025;
+  color: cornflowerblue;
+  cursor: pointer;
+}
+
+/*////////////////////////////////////////////////////////////////////*/
+/* 
+#container .card {
+  color: white !important;
+  margin: 2em 0 0;
+} */
+
+
+#container .card {
+  color: black !important;
+  /* margin: 2em 0 0; */
+  height: 100%;
+  background-color: #fafafa !important;
+  overflow: hidden;
+}
+
+#container>.card {
+  margin: 2em 0 0;
+}
+
+.columns {
+  margin: 1em -.75em !important;
+}
+
+
+.card-header-title {
+  color: black;
+}
+
+.project>.card:hover {
+  cursor: pointer;
+  background-color: #3c413dbe;
+}
+
+.profile_header {
+  background-color: #681985e7;
+  padding: 1px;
+  margin-top: 3em;
+}
+
+.aboutMe {
+  background-color: #3c413dee;
+}
+
+.aboutMeContent {
+  display: flex;
+}
+
+#selfie {
+  width: 100%;
+  height: 100%;
+}
+
+#aboutMeText {
+  flex-grow: 1;
+  margin: 0 1em;
+}
+
+
+@media screen and (max-width: 700px) {
+  #selfie {
+    width: 100%;
+  }
+
+  .aboutMeContent {
+    display: block;
+  }
+
+  #aboutMeText {
+    margin: 0;
+  }
+}
+
+.mijnTalenten {
+  background-color: #4e524fee;
+}
+
+.watLeren {
+  background-color: #4e524fee;
+  color: #000000;
+}
+
+.mijnDoel {
+  background-color: #4e524fee;
+  color: #000000;
+}
+
+/*/////////////////////////////////////////////////////////////////////*/
+
+.projecs_header {
+  background-color: #681985e7;
+  padding: 2px;
+}
+
+.ontwerp_header {
+  background-color: #681985e7;
+  padding: 2px;
+}
+
+.modal {
+  color: black;
+}
+
+/* /  / / / /  HIER JE PROJECTEN PLEUREN, DUMASS  /  / / /  */
+.isaac {
+  /* background-color: #3c413dee; */
+  padding: 2px;
+}
+
+#isaac_gif {
+  width: 100%;
+}
+
+.project>.card {
+  background-color: #3c413dee;
+}
+
+.ma100 {
+  /* background-color: #3c413dee; */
+  padding: 2px;
+}
+
+#ma100 {
+  width: 100%;
+}
+
+.labyrinth {
+  /* background-color: #3c413dee; */
+  padding: 2px;
+}
+
+#labyrinth {
+  width: 100%;
+}
+
+.runner {
+  /* background-color: #3c413dee; */
+  padding: 2px;
+}
+
+#runner {
+  width: 100%;
+}
+
+.siteGame {
+  /* background-color: #3c413dee; */
+  padding: 2px;
+}
+
+#siteGame {
+  width: 100%;
+}
+
+.healthGun {
+  /* background-color: #3c413dee; */
+  padding: 2px;
+}
+
+.mythe_gif {
+  background-color: #3c413dee;
+  padding: 2px;
+}
+
+#mythe_gif {
+  width: 100%;
+}
+
+.mario_gif {
+  background-color: #3c413dee;
+  padding: 2px;
+}
+
+#mario_gif {
+  width: 100%;
+}
+
+.hex_gif {
+  background-color: #3c413dee;
+  padding: 2px;
+}
+
+#hex_gif {
+  width: 100%;
+}
+
+.inventory_gif {
+  background-color: #3c413dee;
+  padding: 2px;
+}
+
+#inventory_gif {
+  width: 100%;
+}
+
+.labyrinth_gif {
+  background-color: #3c413dee;
+  padding: 2px;
+}
+
+#labyrinth_gif {
+  width: 100%;
+}
+
+.runner_gif {
+  background-color: #3c413dee;
+  padding: 2px;
+}
+
+#runner_gif {
+  width: 100%;
+}
+
+.siteGame_gif {
+  background-color: #3c413dee;
+  padding: 2px;
+}
+
+#siteGame_gif {
+  width: 100%;
+}
+
+.healthGun_gif {
+  background-color: #3c413dee;
+  padding: 2px;
+}
+
+#healthGun_gif {
+  width: 100%;
+}
+
+/*////////////////////////////////////////////////////////////////////*/
+
+.contact_header {
+  background-color: #681985e7;
+  padding: 2px;
+}
+
+.contactList {
+  background-color: #3c413dee;
+  padding: 2px;
+}
+
+.contactList a {
+  font-weight: bold;
+}
+
+/* Modal / popup */
+
+.modal-card {
+  margin: 20px;
+  width: 80%;
+}
+
+.modal-card-head {
+  border-radius: 0;
+}
+
+.modal-card-foot {
+  border-radius: 0;
+}
+
+/* .modal-card > * {
+  background-color: rgb(149, 185, 240);
+} */
+
+
+/* .modal-card>.modal-card-head {
+  background-color: rgb(142, 153, 247);
+ } */
+
+.modal-card>.modal-card-body {
+  color: white;
+  background-image: url('andere_foto/image-46448313-navy-blue-background.jpg');
+}
+
+.modal-card-body .columns {
+  margin: 0 auto !important;
+}
+
+.modal-card-body .columns .card {
+  margin: 1em;
+}
+
+.button {
+  background-color: lightblue;
+}
+
+.carousel {
+  margin-bottom: 1em !important;
+}
+
+.imageWrapper.project_photo {
+
+  border: 1px solid #879396;
+}
+
+/* .modal-card>.modal-card-foot {
+  background-color: rgb(142, 153, 247);
+} */
+
+.enable-scroll {
+  overflow-y: hidden;
+}
+
+.project_label {
+  position: absolute;
+  transform: rotate(41deg);
+  background: #e66f4a !important;
+  width: 100%;
+  text-align: center;
+  top: 9%;
+  right: -34%;
+}
+
+@media screen and (min-width: 769px) {
+
+  .modal-card-body>* {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  print .modal-card,
+  .modal-content {
+    width: 85%;
+    text-align: center;
+  }
+}
+
+.modal-close {
+  max-height: 60px !important;
+  height: 60px !important;
+  width: 60px !important;
+  max-width: 60px !important;
+}
+
+.delete::before,
+.modal-close::before {
+  height: 3px;
+}
+
+.delete::after,
+.modal-close::after {
+  width: 3px;
+}
+
+.imageWrapper {
+  position: relative;
+  height: 150px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.imageWrapper>.fas {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  z-index: 10;
+  font-size: 125%;
+  text-shadow: 1px 1px white, -1px 1px white, 1px -1px white, -1px -1px white;
+}
+
+.imageWrapper>img {
+  position: relative;
+  z-index: 1;
+  min-height: 150px;
+}
+
+@media screen and (min-width: 1190px) {
+
+  .imageWrapper>img {
+    min-height: 250px;
+  }
+
+  .imageWrapper {
+    height: 250px;
+  }
+}
+
+.imageWrapper>img:hover+i,
+.imageWrapper>i:hover {
+  font-size: 160%;
+}
