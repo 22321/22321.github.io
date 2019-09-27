@@ -7,31 +7,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bulma.min.css" />
     <link rel="stylesheet" href="bulma-carousel.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=K2D" rel="stylesheet">
     <link rel="shortcut icon" href="andere_foto/x-icon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/solid.css" integrity="sha384-rdyFrfAIC05c5ph7BKz3l5NG5yEottvO/DQ0dCrwD8gzeQDjYBHNr1ucUpQuljos"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/brands.css" integrity="sha384-QT2Z8ljl3UupqMtQNmPyhSPO/d5qbrzWmFxJqmY7tqoTuT2YrQLEqzvVOP2cT5XW"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/fontawesome.css" integrity="sha384-u5J7JghGz0qUrmEsWzBQkfvc8nK3fUT7DCaQzNQ+q4oEXhGSx+P2OqjWsfIRB8QT"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/solid.css"
+        integrity="sha384-rdyFrfAIC05c5ph7BKz3l5NG5yEottvO/DQ0dCrwD8gzeQDjYBHNr1ucUpQuljos" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/brands.css"
+        integrity="sha384-QT2Z8ljl3UupqMtQNmPyhSPO/d5qbrzWmFxJqmY7tqoTuT2YrQLEqzvVOP2cT5XW" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/fontawesome.css"
+        integrity="sha384-u5J7JghGz0qUrmEsWzBQkfvc8nK3fUT7DCaQzNQ+q4oEXhGSx+P2OqjWsfIRB8QT" crossorigin="anonymous">
     <title>Volken Koelewijn</title>
 </head>
 
 <body>
     <nav>
+        <span class="link" id="nav_home"><span class="has-text-header">V</span>olken <span
+                class="has-text-header">K</span>oelewijn</span>
         <span class="link" id="nav_profile">Profiel</span>
         <span class="link" id="nav_ontwerp">Functioneel ontwerp</span>
         <span class="link" id="nav_project">Projecten</span>
         <span class="link" id="nav_contact">Contact</span>
     </nav>
 
+    <div class="socials has-text-centered is-hidden-mobile">
+        <div class="column">
+            <a href="https://github.com/volkenK" target="__blank">
+                <i class="icon fab fa-github"></i></a>
+        </div>
+        <div class="column">
+            <a href="https://www.linkedin.com/in/volken-koelewijn-861651151/" target="__blank">
+                <i class="icon fab fa-linkedin"></i></a>
+        </div>
+        <div class="column">
+            <a href="mailto:volkenkoelewijn@gmail.com">
+                <i class="icon fas fa-envelope"></i></a>
+        </div>
+        <div class="column">
+            <a target="__blank" title="Klik hier om mijn Curriculum Vitae te bekijken"
+                href="https://drive.google.com/file/d/1CivY_Z1RUXEcyWyvW2FN2ShS65JvI4Uc/view?usp=sharing">
+                <span style="width: auto; height: 1em;" class="icon font-alt">CV</span>
+            </a>
+        </div>
+    </div>
+
     <header class="fullscreen-header">
-        <div class="text-vertical-center">
+        <div class="text-vertical-center" id="home">
             <div width="100%">
-                <div class="is-size-1 font-alt"><span class="has-text-header">V</span>olken <span class="has-text-header">K</span>oelewijn</div>
-                <div class="is-size-3">GameDesigner & Prototyper</div>
+                <div class="is-size-1 font-alt"><span class="has-text-header">V</span>olken <span
+                        class="has-text-header">K</span>oelewijn</div>
+                <div class="is-size-3">Gameplay Developer</div>
             </div>
             <div class="header_arrow_wrapper">
                 <span id="header_arrow">🔻</span>
@@ -39,115 +64,297 @@
         </div>
     </header>
 
-    <div id="container" class="container">
+    <!--///////////////////////DIV 1///////////////////////////////////////////////-->
+    <div style="background: white">
+        <div class="container" style="padding: 3em 0;">
+            <h1 class="subtitle is-2 has-text-centered">Functioneel ontwerp</h1>
 
+            <!-- <p class="has-text-grey-dark has-text-centered">
+                Hieronder kunt u schetsen zien die ik gemaakt heb om als game concepten uit te werken.<br>
+                Als u op de knop onder de foto drukt kunt u meer schetsen en informatie hierover zien. </p>
+            </p> -->
 
-        <!--///////////////////////////ABOUT ME///////////////////////////////////////////-->
+            <div class="columns">
 
-        <div class="profile_header card" id="profile">
-            <h1 class="subtitle is-3 has-text-centered">Profiel</h1>
-        </div>
-
-        <div class="columns">
-
-            <div class="column is-one-third-desktop">
-                <div class="card aboutMe">
-                    <div class="card-content aboutMeContent">
-                        <img src="andere_foto/v.jpg" id="selfie">
-
+                <div class="column project">
+                    <div class="labyrinth">
+                        <div class="imageWrapper project_photo">
+                            <img src="schetsen/labMain.jpg" alt="site foto" />
+                        </div>
+                        <p class="card-header-title is-size-5">
+                            Labyrinth puzzle adventure game
+                        </p>
+                        <p style="font-weight: 100">
+                            European minnow priapumfish mosshead warbonnet shrimpfish . Cutlassfish porbeagle shark
+                            ricefish walking.
+                        </p>
                     </div>
                 </div>
+
+                <div class="column project">
+                    <div class="labyrinth">
+                        <div class="imageWrapper project_photo">
+                            <img src="schetsen/labMain.jpg" alt="site foto" />
+                        </div>
+                        <p class="card-header-title is-size-5">
+                            Labyrinth puzzle adventure game
+                        </p>
+                        <p style="font-weight: 100">
+                            European minnow priapumfish mosshead warbonnet shrimpfish . Cutlassfish porbeagle shark
+                            ricefish walking.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="column project">
+                    <div class="labyrinth">
+                        <div class="imageWrapper project_photo">
+                            <img src="schetsen/labMain.jpg" alt="site foto" />
+                        </div>
+                        <p class="card-header-title is-size-5">
+                            Labyrinth puzzle adventure game
+                        </p>
+                        <p style="font-weight: 100">
+                            European minnow priapumfish mosshead warbonnet shrimpfish . Cutlassfish porbeagle shark
+                            ricefish walking.
+                        </p>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="column">
-                <div class="mijnTalenten card">
-                    <div class="card-header">
-                        <p class="card-header-title has-text-centered">
+            <div class="columns">
+
+                <div class="column project">
+                    <div class="labyrinth">
+                        <div class="imageWrapper project_photo">
+                            <img src="schetsen/labMain.jpg" alt="site foto" />
+                        </div>
+                        <p class="card-header-title is-size-5">
+                            Labyrinth puzzle adventure game
+                        </p>
+                        <p style="font-weight: 100">
+                            European minnow priapumfish mosshead warbonnet shrimpfish . Cutlassfish porbeagle shark
+                            ricefish walking.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="column project">
+                    <div class="labyrinth">
+                        <div class="imageWrapper project_photo">
+                            <img src="schetsen/labMain.jpg" alt="site foto" />
+                        </div>
+                        <p class="card-header-title is-size-5">
+                            Labyrinth puzzle adventure game
+                        </p>
+                        <p style="font-weight: 100">
+                            European minnow priapumfish mosshead warbonnet shrimpfish . Cutlassfish porbeagle shark
+                            ricefish walking.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="column project">
+                    <div class="labyrinth">
+                        <div class="imageWrapper project_photo">
+                            <img src="schetsen/labMain.jpg" alt="site foto" />
+                        </div>
+                        <p class="card-header-title is-size-5">
+                            Labyrinth puzzle adventure game
+                        </p>
+                        <p style="font-weight: 100">
+                            European minnow priapumfish mosshead warbonnet shrimpfish . Cutlassfish porbeagle shark
+                            ricefish walking.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--///////////////////////DIV 2///////////////////////////////////////////////-->
+    <div class="background" style="color: white!important;">
+        <div class="container" style="padding: 3em 0;">
+            <h1 class="subtitle is-2 has-text-white has-text-centered">Functioneel ontwerp</h1>
+
+            <p class=" has-text-centered">
+                Hieronder kunt u schetsen zien die ik gemaakt heb om als game concepten uit te werken.<br>
+                Als u op de knop onder de foto drukt kunt u meer schetsen en informatie hierover zien. </p>
+            </p>
+
+            <div class="columns">
+
+                <div class="column project">
+                    <div class="labyrinth">
+                        <div class="imageWrapper project_photo">
+                            <img src="schetsen/labMain.jpg" alt="site foto" />
+                        </div>
+                        <p class="card-header-title is-size-5">
+                            Labyrinth puzzle adventure game
+                        </p>
+                        <p style="font-weight: 100">
+                            European minnow priapumfish mosshead warbonnet shrimpfish . Cutlassfish porbeagle shark
+                            ricefish walking.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="column project">
+                    <div class="labyrinth">
+                        <div class="imageWrapper project_photo">
+                            <img src="schetsen/labMain.jpg" alt="site foto" />
+                        </div>
+                        <p class="card-header-title is-size-5">
+                            Labyrinth puzzle adventure game
+                        </p>
+                        <p style="font-weight: 100">
+                            European minnow priapumfish mosshead warbonnet shrimpfish . Cutlassfish porbeagle shark
+                            ricefish walking.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="column project">
+                    <div class="labyrinth">
+                        <div class="imageWrapper project_photo">
+                            <img src="schetsen/labMain.jpg" alt="site foto" />
+                        </div>
+                        <p class="card-header-title is-size-5">
+                            Labyrinth puzzle adventure game
+                        </p>
+                        <p style="font-weight: 100">
+                            European minnow priapumfish mosshead warbonnet shrimpfish . Cutlassfish porbeagle shark
+                            ricefish walking.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="columns">
+
+                <div class="column project">
+                    <div class="labyrinth">
+                        <div class="imageWrapper project_photo">
+                            <img src="schetsen/labMain.jpg" alt="site foto" />
+                        </div>
+                        <p class="card-header-title is-size-5">
+                            Labyrinth puzzle adventure game
+                        </p>
+                        <p style="font-weight: 100">
+                            European minnow priapumfish mosshead warbonnet shrimpfish . Cutlassfish porbeagle shark
+                            ricefish walking.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="column project">
+                    <div class="labyrinth">
+                        <div class="imageWrapper project_photo">
+                            <img src="schetsen/labMain.jpg" alt="site foto" />
+                        </div>
+                        <p class="card-header-title is-size-5">
+                            Labyrinth puzzle adventure game
+                        </p>
+                        <p style="font-weight: 100">
+                            European minnow priapumfish mosshead warbonnet shrimpfish . Cutlassfish porbeagle shark
+                            ricefish walking.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="column project">
+                    <div class="labyrinth">
+                        <div class="imageWrapper project_photo">
+                            <img src="schetsen/labMain.jpg" alt="site foto" />
+                        </div>
+                        <p class="card-header-title is-size-5">
+                            Labyrinth puzzle adventure game
+                        </p>
+                        <p style="font-weight: 100">
+                            European minnow priapumfish mosshead warbonnet shrimpfish . Cutlassfish porbeagle shark
+                            ricefish walking.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--///////////////////////DIV 3///////////////////////////////////////////////-->
+    <div style="background:white;">
+        <div class="container" style="padding: 3em 0;">
+            <!--///////////////////////////ABOUT ME///////////////////////////////////////////-->
+
+            <h1 class="subtitle is-2 has-text-centered" id="profile">Profiel</h1>
+
+            <div class="columns">
+
+                <div class="column is-one-third">
+                    <div class="labyrinth">
+                        <div class="">
+                            <img src="andere_foto/v.jpg" alt="site foto" />
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="column">
+                    <div class="labyrinth">
+                        <p class="card-header-title is-size-5">
                             Over mij.
                         </p>
-                    </div>
-                    <div class="card-content">
-                        Mijn naam is Volken Koelewijn,<br> ik ben geboren op 13 September 1999
-                        en woon in Uithoorn. Ik volg momenteel een opleiding voor Game Developer op het Mediacollege
-                        Amsterdam. <br>
-                        Games heb ik al gespeeld zolang als ik mij kan herrineren.
-                        Ik ben gefacineerd door dit medium en wil altijd meer leren over hoe games in elkaar zitten.
-                        verder vind ik het ook leuk om te tekenen en om eigen draaien aan concepten te geven.
-                    </div>
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="mijnDoel card">
-                    <div class="card-header">
-                        <p class="card-header-title has-text-centered">
-                            Mijn Doel!
-                        </p>
-                    </div>
-                    <div class="card-content">
-                        Mijn doel is dat ik uiteindelijk mijn ideeën in games kan veranderen met een team of eigen
-                        bedrijf.
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="columns">
-
-            <div class="column">
-                <div class="mijnTalenten card">
-                    <div class="card-header">
-                        <p class="card-header-title has-text-centered">
-                            Mijn skills
-                        </p>
-                    </div>
-                    <div class="card-content">
-
-                        Ik ben creatief en kan goed comminuceren. Verder heb ik veel kennis over GameDesign en
-                        GameFeel.
-                        Ook ben ik leiding gevend ingesteld en kan ik goed plannen, taken verdelen en motiveren.<br>
-                        Met programmeren werk ik in Unity.
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="watLeren card">
-                    <div class="card-header">
-                        <p class="card-header-title has-text-centered">
-                            Wat wil ik leren
-                        </p>
-                    </div>
-                    <div class="card-content">
-                        <p>
-                            Voor dit stadium in mijn opleiding wil ik graag meer leren over hoe game design en
-                            prototyping er aan
-                            toe gaan bij game bedrijven zelf. En hoe ik mijn kennis daarover verbreden kan.
-
-
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="watLeren card">
-                    <div class="card-header">
-                        <p class="card-header-title has-text-centered">
-                            Curriculum Vitae
-                        </p>
-                    </div>
-                    <div class="card-content">
-                        <p class="has-text-centered">
-                            <a href="https://drive.google.com/file/d/1CivY_Z1RUXEcyWyvW2FN2ShS65JvI4Uc/view?usp=sharing" target="_blank"
-                                class="button">Klik hier om mijn Curriculum Vitae te bekijken</a>
+                        <p style="font-weight: 100">
+                            Mijn naam is Volken Koelewijn,<br> ik ben geboren op 13 September 1999
+                            en woon in Uithoorn. Ik volg momenteel een opleiding voor Game Developer op het Mediacollege
+                            Amsterdam. <br>
+                            Games heb ik al gespeeld zolang als ik mij kan herrineren.
+                            Ik ben gefacineerd door dit medium en wil altijd meer leren over hoe games in elkaar zitten.
+                            verder vind ik het ook leuk om te tekenen en om eigen draaien aan concepten te geven.
                         </p>
                     </div>
                 </div>
             </div>
 
         </div>
+    </div>
+
+    <!--/////////////////////////////FOOTER///////////////////////////////////////// -->
+    <div class="contact_header footer" id="contact">
+        <h1 class="subtitle is-3 has-text-centered has-text-white">Contact</h1>
+    </div>
+
+    <div class="footer card contactList">
+        <div class="card-content">
+            <div class="columns has-text-centered">
+                <div class="column">
+                    <a href="https://github.com/volkenK" target="__blank">
+                        <i class="icon fab fa-github"></i></a>
+                </div>
+                <div class="column">
+                    <a href="https://www.linkedin.com/in/volken-koelewijn-861651151/" target="__blank">
+                        <i class="icon fab fa-linkedin"></i></a>
+                </div>
+                <div class="column">
+                    <a href="mailto:volkenkoelewijn@gmail.com">
+                        <i class="icon fas fa-envelope"></i></a>
+                </div>
+                <div class="column">
+                    <a target="__blank" title="Klik hier om mijn Curriculum Vitae te bekijken"
+                        href="https://drive.google.com/file/d/1CivY_Z1RUXEcyWyvW2FN2ShS65JvI4Uc/view?usp=sharing">
+                        <span style="width: auto; height: 1em;" class="icon font-alt">CV</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="container" class="container">
 
         <!--///////////////////////Functioneel ontwerp///////////////////////////////////////////////-->
         <div class="card ontwerp_header" id="ontwerp">
@@ -197,26 +404,36 @@
                                 <div class="card column">
                                     <div class="card-content">
                                         <p>
-                                            Dit is een concept voor een 3D puzzle/adventure game ala de Zelda games.<br><br>
+                                            Dit is een concept voor een 3D puzzle/adventure game ala de Zelda
+                                            games.<br><br>
                                             Hierin is het scenario dat de speler dit labyrinth binnen gaat om de
                                             eindbaas te verslaan voordat hij uitzichzelf ontwaakt.<br>
                                             <br>
-                                            Bij de start van het spel kan de speler maar een richting op door de kamers heen.
-                                            hierbij eindigt de speler in de final boss room. Echter zit de boss in een kristal opgesloten. 
-                                            Zodra de speler het kristal nadert sluit de ingang zichzelf af en ontwaakt de dungeon.<br>
+                                            Bij de start van het spel kan de speler maar een richting op door de kamers
+                                            heen.
+                                            hierbij eindigt de speler in de final boss room. Echter zit de boss in een
+                                            kristal opgesloten.
+                                            Zodra de speler het kristal nadert sluit de ingang zichzelf af en ontwaakt
+                                            de dungeon.<br>
                                             <img src="schetsen/labStart.jpg" alt="site foto" /><br><br>
-                                            Ingame kan de speler altijd een kaart zijn van waar hij zich in de dungeon bevind. 
+                                            Ingame kan de speler altijd een kaart zijn van waar hij zich in de dungeon
+                                            bevind.
                                             De room layout ziet eruit als een grid van 5 bij 5 kamers.<br>
                                             <img src="schetsen/labLayout.jpg" alt="site foto" /><br><br>
-                                            Maar er is een twist, de kamers sluiten niet op een logische manier aan elkaar aan. 
-                                            Bijvoorbeeld: je zou verwachten dat als je van kamer 7 naar rechts zou gaan dat je 
+                                            Maar er is een twist, de kamers sluiten niet op een logische manier aan
+                                            elkaar aan.
+                                            Bijvoorbeeld: je zou verwachten dat als je van kamer 7 naar rechts zou gaan
+                                            dat je
                                             in kamer 8 terecht komt. Maar eigenlijk kom je dan in kamer 20 terecht.<br>
-                                            Ook kan je bijvoorbeeld in een kamer maar twee uitgangen hebben al zou het er normaal 4 moeten hebben. 
-                                            Of dat je een kamer uitloopt om aan de andere kant van die kamer weer binnen komen te lopen.<br>
+                                            Ook kan je bijvoorbeeld in een kamer maar twee uitgangen hebben al zou het
+                                            er normaal 4 moeten hebben.
+                                            Of dat je een kamer uitloopt om aan de andere kant van die kamer weer binnen
+                                            komen te lopen.<br>
                                             <img src="schetsen/labLogic.jpg" alt="site foto" /><br><br>
                                             Misschien zijn sommige kamers ook wel groter zijn wat ze lijken.<br>
                                             <img src="schetsen/labMystery.jpg" alt="site foto" /><br><br>
-                                            Om de game te winnen moet je de puzzels in de kamers oplossen zodat de kamers uiteindelijk op hun juiste positie eindigen. 
+                                            Om de game te winnen moet je de puzzels in de kamers oplossen zodat de
+                                            kamers uiteindelijk op hun juiste positie eindigen.
                                             Hierna kan je de boss ontwaken en hem verslaan.
                                         </p>
                                     </div>
@@ -270,22 +487,31 @@
                                     <div class="card-content">
                                         <p>
                                             Dit is een concept voor een topdown shooter game.<br><br>
-                                            Het scenario hierin is dat je in een tank rijdt en alle vijanden moet verslaan met als thema gokken.<br><br>
-                                            In deze game wil ik graag veel met dualpurpos mechanics werken. Dat betekend dat een actie meerder functies heeft.<br>
-                                            Bijvoorbeeld dat je healthbar en je geselecteerde wapen dezelfde meter delen.<br>
+                                            Het scenario hierin is dat je in een tank rijdt en alle vijanden moet
+                                            verslaan met als thema gokken.<br><br>
+                                            In deze game wil ik graag veel met dualpurpos mechanics werken. Dat betekend
+                                            dat een actie meerder functies heeft.<br>
+                                            Bijvoorbeeld dat je healthbar en je geselecteerde wapen dezelfde meter
+                                            delen.<br>
                                             <img src="schetsen/tankExample.jpg" alt="site foto" /><br><br>
-                                            De verschillende wapens die je bij je draagt hebben allemaal een ander schiet gedrag of effect.
-                                            Hierdoor is het in sommige situaties verstandiger om opzettelijk schade te nemen zodat je naar een 
+                                            De verschillende wapens die je bij je draagt hebben allemaal een ander
+                                            schiet gedrag of effect.
+                                            Hierdoor is het in sommige situaties verstandiger om opzettelijk schade te
+                                            nemen zodat je naar een
                                             wapen overgaat dat effectiever is om de huidige vijand te verslaan.<br><br>
-                                            Ook vind ik het een leuk idee om geld ook als ammunitie te gebruiken. Er kunnen mogelijk een paar 
-                                            soorten geld zijn die je wel gecontroleerd af kan wisselen. Deze zouden dan per kogel 
+                                            Ook vind ik het een leuk idee om geld ook als ammunitie te gebruiken. Er
+                                            kunnen mogelijk een paar
+                                            soorten geld zijn die je wel gecontroleerd af kan wisselen. Deze zouden dan
+                                            per kogel
                                             meer schade doen maar ook een kleiner bereik hebben.<br>
                                             <img src="schetsen/tankAmmo.jpg" alt="site foto" /><br><br>
-                                            Verder kan de speler ook naar andere niveaus van de arena reizen. Hieronder is een mockup van het gamescherm.<br>
+                                            Verder kan de speler ook naar andere niveaus van de arena reizen. Hieronder
+                                            is een mockup van het gamescherm.<br>
                                             <img src="schetsen/tankGamescreen.jpg" alt="site foto" /><br>
                                             <img src="schetsen/tankUIlayer.jpg" alt="site foto" /><br><br>
-                                            De controles had ik origineel uitgedacht voor een super Nintendo controller. 
-                                            Maar ik heb ook een versie gemaakt die compatibel is met een telefoon scherm.<br>
+                                            De controles had ik origineel uitgedacht voor een super Nintendo controller.
+                                            Maar ik heb ook een versie gemaakt die compatibel is met een telefoon
+                                            scherm.<br>
                                             <img src="schetsen/tankController.jpg" alt="site foto" /><br>
                                             <img src="schetsen/tankButtonCollision.jpg" alt="site foto" />
                                         </p>
@@ -334,34 +560,41 @@
                         </header>
                         <section class="modal-card-body">
 
-                            
-                                <div class="columns">
-                                        <div class="card column">
-                                            <div class="card-content">
-                                                    <p>
-                                                        Dit was een concept voor het project Mythe waar ik met een groep aan moest werken. 
-                                                        Echter was dit concept afgewezen. Maar ik denk nog steeds dat ik dit nog steeds in een leuke game kan veranderen.<br><br>
-                                                        Het scenario was dat een meisje ontvoerd werd door rare wezens en dat ze van hun moest ontsnappen
-                                                         en een weg terug naar huis moest weten te vinden.<br><rbr>
-                                                        De bijgevoegde tekeningen laten level ontwerpen zien die ik gemaakt had.<br>
-                                                        Ik geen schets voor de speler zelf gemaakt aangezien dat niet nodig was voor de level ontwerpen.<br>
-                                                        Hieronder staat een legenda van wat sommige tekens betekenen<br>
-                                                        <img src="schetsen/pukLegenda.jpg" alt="site foto" /><br><br>
-                                                        Hieronder heb ik een aantal van die level schetsen staan om de interesantere puzzels te laten zien.<br>
-                                                        <img src="schetsen/puk0.jpg" alt="site foto" /><br>
-                                                        <img src="schetsen/puk1.jpg" alt="site foto" /><br>
-                                                        <img src="schetsen/puk2.jpg" alt="site foto" /><br>
-                                                        <img src="schetsen/puk3.jpg" alt="site foto" /><br>
-                                                        <img src="schetsen/puk4.jpg" alt="site foto" /><br>
-                                                        <img src="schetsen/puk5.jpg" alt="site foto" /><br>
-                                                        <img src="schetsen/puk6.jpg" alt="site foto" /><br>
-                                                        <img src="schetsen/puk7.jpg" alt="site foto" /><br>
-                                                        <img src="schetsen/puk9.jpg" alt="site foto" /><br>
-                                                        <img src="schetsen/puk13.jpg" alt="site foto" /><br>
-                                                    </p>
-                                            </div>
-                                        </div>
+
+                            <div class="columns">
+                                <div class="card column">
+                                    <div class="card-content">
+                                        <p>
+                                            Dit was een concept voor het project Mythe waar ik met een groep aan moest
+                                            werken.
+                                            Echter was dit concept afgewezen. Maar ik denk nog steeds dat ik dit nog
+                                            steeds in een leuke game kan veranderen.<br><br>
+                                            Het scenario was dat een meisje ontvoerd werd door rare wezens en dat ze van
+                                            hun moest ontsnappen
+                                            en een weg terug naar huis moest weten te vinden.<br>
+                                            <rbr>
+                                                De bijgevoegde tekeningen laten level ontwerpen zien die ik gemaakt
+                                                had.<br>
+                                                Ik geen schets voor de speler zelf gemaakt aangezien dat niet nodig was
+                                                voor de level ontwerpen.<br>
+                                                Hieronder staat een legenda van wat sommige tekens betekenen<br>
+                                                <img src="schetsen/pukLegenda.jpg" alt="site foto" /><br><br>
+                                                Hieronder heb ik een aantal van die level schetsen staan om de
+                                                interesantere puzzels te laten zien.<br>
+                                                <img src="schetsen/puk0.jpg" alt="site foto" /><br>
+                                                <img src="schetsen/puk1.jpg" alt="site foto" /><br>
+                                                <img src="schetsen/puk2.jpg" alt="site foto" /><br>
+                                                <img src="schetsen/puk3.jpg" alt="site foto" /><br>
+                                                <img src="schetsen/puk4.jpg" alt="site foto" /><br>
+                                                <img src="schetsen/puk5.jpg" alt="site foto" /><br>
+                                                <img src="schetsen/puk6.jpg" alt="site foto" /><br>
+                                                <img src="schetsen/puk7.jpg" alt="site foto" /><br>
+                                                <img src="schetsen/puk9.jpg" alt="site foto" /><br>
+                                                <img src="schetsen/puk13.jpg" alt="site foto" /><br>
+                                        </p>
                                     </div>
+                                </div>
+                            </div>
 
                         </section>
                         <footer class="modal-card-foot"> <button class="close button">Sluiten</button>
@@ -380,7 +613,7 @@
 
         </div>
 
-        
+
 
         <body>
             <!--///////////////////////PROJECTEN///////////////////////////////////////////////-->
@@ -431,7 +664,8 @@
                                     <div class="card column">
                                         <div class="card-content">
                                             <p>
-                                                Dit project was om te kijken hoe ik zeshoeken in een grid kon doen.<br><br>
+                                                Dit project was om te kijken hoe ik zeshoeken in een grid kon
+                                                doen.<br><br>
                                                 Om de zeshoek vorm te krijgen heb ik ook opgezocht hoe je poligonale
                                                 models kan scripten.<br>
 
@@ -457,9 +691,9 @@
                                             <div class="title">En dan eindig je met dit effect.</div>
                                         </div>
                                         <div class='carousel-item has-background is-active'>
-                                                <img class="is-background" src="schetsen/hex.jpg" />
-                                                <div class="title">Dit is een schets van hoe ik tewerk wou gaan.</div>
-                                            </div>
+                                            <img class="is-background" src="schetsen/hex.jpg" />
+                                            <div class="title">Dit is een schets van hoe ik tewerk wou gaan.</div>
+                                        </div>
                                     </div>
                                     <div class="carousel-navigation is-overlay">
                                         <div class="carousel-nav-left">
@@ -517,7 +751,8 @@
                                 </div>
                             </section>
                             <footer class="modal-card-foot"> <button class="close button">Sluiten</button>
-                                <a class="button" href="http://22321.hosts.ma-cloud.nl/bewijzenmap/hexagonGridBuild/index.html"
+                                <a class="button"
+                                    href="http://22321.hosts.ma-cloud.nl/bewijzenmap/hexagonGridBuild/index.html"
                                     target="_blank">Speel game</a>
                                 <a class="button" href="https://github.com/VolkenK/HexGrid" target="_blank">Code op
                                     Github</a>
@@ -640,9 +875,11 @@
                             </section>
                             <footer class="modal-card-foot">
                                 <button class="close button">Sluiten</button>
-                                <a class="button" href="http://22321.hosts.ma-cloud.nl/bewijzenmap/marioTwistBuild/index.html"
+                                <a class="button"
+                                    href="http://22321.hosts.ma-cloud.nl/bewijzenmap/marioTwistBuild/index.html"
                                     target="_blank">Speel game</a>
-                                <a class="button" href="https://github.com/VolkenK/SuperMarioBros_twist" target="_blank">Code
+                                <a class="button" href="https://github.com/VolkenK/SuperMarioBros_twist"
+                                    target="_blank">Code
                                     op Github</a>
                             </footer>
                         </div>
@@ -719,7 +956,8 @@
                                         </div>
                                         <div class='carousel-item has-background is-active'>
                                             <img class="is-background" src="schetsen/inventoryMenuOptions.jpg" />
-                                            <div class="title">Een schets van hoe ik het navigeren er uit wou laten zien</div>
+                                            <div class="title">Een schets van hoe ik het navigeren er uit wou laten zien
+                                            </div>
                                         </div>
 
 
@@ -734,7 +972,7 @@
                                     </div>
                                 </div>
 
-                                
+
 
                                 <div class="columns">
                                     <div class="card column">
@@ -921,7 +1159,8 @@
                                 </div>
                             </section>
                             <footer class="modal-card-foot"> <button class="close button">Sluiten</button>
-                                <a class="button" href="http://22321.hosts.ma-cloud.nl/bewijzenmap/p2.2/IDP/IsaacGameSliceV4/"
+                                <a class="button"
+                                    href="http://22321.hosts.ma-cloud.nl/bewijzenmap/p2.2/IDP/IsaacGameSliceV4/"
                                     target="_blank">Speel game</a>
 
                                 <a class="button" href="https://github.com/VolkenK/IsaacMyScripts" target="_blank">Code
@@ -1049,7 +1288,8 @@
                             </section>
                             <footer class="modal-card-foot">
                                 <button class="close button">Sluiten</button>
-                                <a class="button" href="https://github.com/neocccro/ProjectGamelab/tree/master/Project/Assets/Scripts"
+                                <a class="button"
+                                    href="https://github.com/neocccro/ProjectGamelab/tree/master/Project/Assets/Scripts"
                                     target="_blank">Team's code
                                     op Github</a>
                             </footer>
@@ -1246,7 +1486,8 @@
                             </section>
                             <footer class="modal-card-foot"> <button class="close button">Sluiten</button>
 
-                                <a class="button" href="https://github.com/Krokoloko/Mythe2018/tree/master/Mythe/Assets/Scripts/player"
+                                <a class="button"
+                                    href="https://github.com/Krokoloko/Mythe2018/tree/master/Mythe/Assets/Scripts/player"
                                     target="_blank">Player scripts op Github</a>
 
                                 <a class="button" href="
@@ -1267,6 +1508,114 @@
                     </div>
                 </div>
             </div>
+
+            <!--///////////////////////////ABOUT ME///////////////////////////////////////////-->
+
+            <div class="profile_header card" id="profile">
+                <h1 class="subtitle is-3 has-text-centered">Profiel</h1>
+            </div>
+
+            <div class="columns">
+
+                <div class="column is-one-third-desktop">
+                    <div class="card aboutMe">
+                        <div class="card-content aboutMeContent">
+                            <img src="andere_foto/v.jpg" id="selfie">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="mijnTalenten card">
+                        <div class="card-header">
+                            <p class="card-header-title has-text-centered">
+                                Over mij.
+                            </p>
+                        </div>
+                        <div class="card-content">
+                            Mijn naam is Volken Koelewijn,<br> ik ben geboren op 13 September 1999
+                            en woon in Uithoorn. Ik volg momenteel een opleiding voor Game Developer op het Mediacollege
+                            Amsterdam. <br>
+                            Games heb ik al gespeeld zolang als ik mij kan herrineren.
+                            Ik ben gefacineerd door dit medium en wil altijd meer leren over hoe games in elkaar zitten.
+                            verder vind ik het ook leuk om te tekenen en om eigen draaien aan concepten te geven.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="mijnDoel card">
+                        <div class="card-header">
+                            <p class="card-header-title has-text-centered">
+                                Mijn Doel!
+                            </p>
+                        </div>
+                        <div class="card-content">
+                            Mijn doel is dat ik uiteindelijk mijn ideeën in games kan veranderen met een team of eigen
+                            bedrijf.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns">
+
+                <div class="column">
+                    <div class="mijnTalenten card">
+                        <div class="card-header">
+                            <p class="card-header-title has-text-centered">
+                                Mijn skills
+                            </p>
+                        </div>
+                        <div class="card-content">
+
+                            Ik ben creatief en kan goed comminuceren. Verder heb ik veel kennis over GameDesign en
+                            GameFeel.
+                            Ook ben ik leiding gevend ingesteld en kan ik goed plannen, taken verdelen en motiveren.<br>
+                            Met programmeren werk ik in Unity.
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="watLeren card">
+                        <div class="card-header">
+                            <p class="card-header-title has-text-centered">
+                                Wat wil ik leren
+                            </p>
+                        </div>
+                        <div class="card-content">
+                            <p>
+                                Voor dit stadium in mijn opleiding wil ik graag meer leren over hoe game design en
+                                prototyping er aan
+                                toe gaan bij game bedrijven zelf. En hoe ik mijn kennis daarover verbreden kan.
+
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="watLeren card">
+                        <div class="card-header">
+                            <p class="card-header-title has-text-centered">
+                                Curriculum Vitae
+                            </p>
+                        </div>
+                        <div class="card-content">
+                            <p class="has-text-centered">
+                                <a href="https://drive.google.com/file/d/1CivY_Z1RUXEcyWyvW2FN2ShS65JvI4Uc/view?usp=sharing"
+                                    target="_blank" class="button">Klik hier om mijn Curriculum Vitae te bekijken</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
             <br>
 
             <!--/////////////////////////////FOOTER///////////////////////////////////////// -->
@@ -1288,6 +1637,12 @@
                         <div class="column">
                             <a href="mailto:volkenkoelewijn@gmail.com">
                                 <i class="icon fas fa-envelope"></i></a>
+                        </div>
+                        <div class="column">
+                            <a target="__blank" title="Klik hier om mijn Curriculum Vitae te bekijken"
+                                href="https://drive.google.com/file/d/1CivY_Z1RUXEcyWyvW2FN2ShS65JvI4Uc/view?usp=sharing">
+                                <span style="width: auto; height: 1em;" class="icon font-alt">CV</span>
+                            </a>
                         </div>
                     </div>
                 </div>

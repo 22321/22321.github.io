@@ -12,7 +12,7 @@ body {
   background-size: normal;
   background-position-x: 10em;
   animation: background-image linear 800s infinite forwards;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   color: black;
 }
 
@@ -49,6 +49,82 @@ nav {
   display: flex;
   z-index: 35;
   box-shadow: 0px 1px 8px #47464699;
+}
+
+.project .project_photo::after {
+  content: "More info";
+}
+.project:hover {
+  cursor: pointer;
+}
+.project:hover .project_photo::after {
+  content: "More info";
+  position: absolute;
+  left: 38%;
+  top: 50%;
+  z-index: 1;
+  color: white;
+  background: #e66f4a;
+  opacity: 0.9;
+  padding: 0.3em 1em;
+  border-radius: 5px;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
+}
+
+
+.socials {
+  position: absolute;
+  right: 0;
+  top: 35vh;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.15);
+  width: 75px;
+  padding: 0.2em 0;
+}
+
+.socials>.column {
+  padding: 0.5em 0.8em 0.5em 0;
+}
+
+.socials .icon {
+  font-size: 250%;
+}
+
+.socials .column:last-child .icon {
+  font-size: 200%;
+  padding-left: 0.4em;
+}
+
+.socials .icon:hover {
+  color: white;
+}
+
+.background {
+  background-image: url('andere_foto/20181111_140228.jpg');
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-position: center;
+  background-color: cornflowerblue;
+}
+
+.background .subtitle,
+.background .card-header-title,
+.background {
+  color: rgb(233, 230, 230) !important;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.514);
+}
+
+.footer {
+  background: #1b1b1b !important;
+}
+
+.footer a {
+  color: white;
+}
+
+.footer a:hover {
+  color: #e66f4a;
 }
 
 .fullscreen-header {
@@ -108,7 +184,7 @@ nav {
 
 .subtitle {
   font-family: 'K2D', sans-serif;
-  color: black !important;
+  color: black;
   font-weight: bold;
 }
 
@@ -154,6 +230,7 @@ nav {
 
 .card-header-title {
   color: black;
+  padding: .75em 0;
 }
 
 .project>.card:hover {
@@ -419,8 +496,9 @@ nav {
 }
 
 .imageWrapper.project_photo {
-
-  border: 1px solid #879396;
+  box-shadow: 2px -2px 7px 1px rgba(0,0,0,0.3);
+  /* border: 1px solid #879396; */
+  border-radius: 12px;
 }
 
 /* .modal-card>.modal-card-foot {

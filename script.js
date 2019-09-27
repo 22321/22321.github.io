@@ -6,6 +6,10 @@ let ontwerp = document.querySelector('#ontwerp');
 let header = document.querySelector('.fullscreen-header');
 let carousels = bulmaCarousel.attach(); 
 
+document.querySelector('#nav_home').addEventListener("click", () => scrollTo({
+    top: 0,
+    behavior: "smooth"
+}));
 document.querySelector('#nav_profile').addEventListener("click", () => smoothScroll(profile));
 document.querySelector('#nav_project').addEventListener("click", () => smoothScroll(project));
 // document.querySelector('#nav_games').addEventListener("click", () => smoothScroll(games));
