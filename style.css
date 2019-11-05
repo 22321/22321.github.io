@@ -54,12 +54,15 @@ nav {
 .project .project_photo::after {
   content: "More info";
 }
+
 .project:hover {
   cursor: pointer;
 }
+
 .project:hover .project_photo::after {
   opacity: .9;
 }
+
 .project .project_photo::after {
   content: "More info";
   position: absolute;
@@ -118,6 +121,10 @@ nav {
 .background {
   color: rgb(233, 230, 230) !important;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.514);
+}
+
+.background .modal {
+  text-shadow: none;
 }
 
 .footer {
@@ -481,7 +488,8 @@ nav {
 
 .modal-card>.modal-card-body {
   color: white;
-  background-image: url('andere_foto/image-46448313-navy-blue-background.jpg');
+  /* background-image: url('andere_foto/image-46448313-navy-blue-background.jpg');*/
+  background: #76a5fb;
 }
 
 .modal-card-body .columns {
@@ -490,6 +498,7 @@ nav {
 
 .modal-card-body .columns .card {
   margin: 1em;
+  border-radius: 8px;
 }
 
 .button {
@@ -501,7 +510,7 @@ nav {
 }
 
 .imageWrapper.project_photo {
-  box-shadow: 2px -2px 7px 1px rgba(0,0,0,0.3);
+  box-shadow: 2px -2px 7px 1px rgba(0, 0, 0, 0.3);
   /* border: 1px solid #879396; */
   border-radius: 12px;
 }

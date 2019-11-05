@@ -29,17 +29,17 @@ function smoothScroll(ev) {
     });
 }
 
-// addModal('isaac');
-// addModal('ma100');
-// addModal('mythe');
+addModal('isaac');
+addModal('ma100');
+addModal('mythe');
 
-// addModal('hex');
-// addModal('mario');
-// addModal('inventory');
+addModal('hex');
+addModal('mario');
+addModal('inventory');
 
 addModal('labyrinth');
-// addModal('lucas');
-// addModal('pukwudgie_ontwerp');
+addModal('lucas');
+addModal('pukwudgie_ontwerp');
 // addModal('runner');
 // addModal('siteGame');
 // addModal('healthGun');
