@@ -58,14 +58,19 @@ nav {
   cursor: pointer;
 }
 .project:hover .project_photo::after {
+  opacity: .9;
+}
+.project .project_photo::after {
   content: "More info";
   position: absolute;
-  left: 38%;
+  left: 50%;
   top: 50%;
+  margin: -16px -50px;
   z-index: 1;
   color: white;
   background: #e66f4a;
-  opacity: 0.9;
+  opacity: 0;
+  transition: .3s;
   padding: 0.3em 1em;
   border-radius: 5px;
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);

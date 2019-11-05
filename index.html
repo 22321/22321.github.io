@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="bulma-carousel.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=K2D" rel="stylesheet">
-    <link rel="shortcut icon" href="andere_foto/x-icon.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="andere_foto/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/solid.css"
         integrity="sha384-rdyFrfAIC05c5ph7BKz3l5NG5yEottvO/DQ0dCrwD8gzeQDjYBHNr1ucUpQuljos" crossorigin="anonymous">
@@ -76,7 +76,7 @@
 
             <div class="columns">
 
-                <div class="column project">
+                <div class="column project" id="labyrinth">
                     <div class="labyrinth">
                         <div class="imageWrapper project_photo">
                             <img src="schetsen/labMain.jpg" alt="site foto" />
@@ -88,6 +88,63 @@
                             European minnow priapumfish mosshead warbonnet shrimpfish . Cutlassfish porbeagle shark
                             ricefish walking.
                         </p>
+                    </div>
+                    
+                    <div class="modal" id="labyrinth_modal">
+                        <div class="modal-background"></div>
+                        <div class="modal-card">
+                            <header class="modal-card-head">
+                                <p class="modal-card-title">Labyrinth puzzle adventure game</p>
+                                <button class="delete"></button>
+                            </header>
+                            <section class="modal-card-body">
+    
+    
+                                <div class="columns">
+                                    <div class="card column">
+                                        <div class="card-content">
+                                            <p>
+                                                Dit is een concept voor een 3D puzzle/adventure game ala de Zelda
+                                                games.<br><br>
+                                                Hierin is het scenario dat de speler dit labyrinth binnen gaat om de
+                                                eindbaas te verslaan voordat hij uitzichzelf ontwaakt.<br>
+                                                <br>
+                                                Bij de start van het spel kan de speler maar een richting op door de kamers
+                                                heen.
+                                                hierbij eindigt de speler in de final boss room. Echter zit de boss in een
+                                                kristal opgesloten.
+                                                Zodra de speler het kristal nadert sluit de ingang zichzelf af en ontwaakt
+                                                de dungeon.<br>
+                                                <img src="schetsen/labStart.jpg" alt="site foto" /><br><br>
+                                                Ingame kan de speler altijd een kaart zijn van waar hij zich in de dungeon
+                                                bevind.
+                                                De room layout ziet eruit als een grid van 5 bij 5 kamers.<br>
+                                                <img src="schetsen/labLayout.jpg" alt="site foto" /><br><br>
+                                                Maar er is een twist, de kamers sluiten niet op een logische manier aan
+                                                elkaar aan.
+                                                Bijvoorbeeld: je zou verwachten dat als je van kamer 7 naar rechts zou gaan
+                                                dat je
+                                                in kamer 8 terecht komt. Maar eigenlijk kom je dan in kamer 20 terecht.<br>
+                                                Ook kan je bijvoorbeeld in een kamer maar twee uitgangen hebben al zou het
+                                                er normaal 4 moeten hebben.
+                                                Of dat je een kamer uitloopt om aan de andere kant van die kamer weer binnen
+                                                komen te lopen.<br>
+                                                <img src="schetsen/labLogic.jpg" alt="site foto" /><br><br>
+                                                Misschien zijn sommige kamers ook wel groter zijn wat ze lijken.<br>
+                                                <img src="schetsen/labMystery.jpg" alt="site foto" /><br><br>
+                                                Om de game te winnen moet je de puzzels in de kamers oplossen zodat de
+                                                kamers uiteindelijk op hun juiste positie eindigen.
+                                                Hierna kan je de boss ontwaken en hem verslaan.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+    
+    
+                            </section>
+                            <footer class="modal-card-foot"> <button class="close button">Sluiten</button>
+                            </footer>
+                        </div>
                     </div>
                 </div>
 
@@ -371,7 +428,7 @@
         </div>
 
         <div class="columns">
-            <div class="column project" id="labyrinth">
+            <div class="column project">
                 <div class="card labyrinth">
                     <div class="card-header">
                         <p class="card-header-title has-text-centered">
@@ -390,7 +447,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="modal" id="labyrinth_modal">
+                <!-- <div class="modal" id="labyrinth_modal">
                     <div class="modal-background"></div>
                     <div class="modal-card">
                         <header class="modal-card-head">
@@ -445,7 +502,7 @@
                         <footer class="modal-card-foot"> <button class="close button">Sluiten</button>
                         </footer>
                     </div>
-                </div>
+                </div> -->
                 <!-- Foto stukje -->
                 <div class="modal photo" id="labyrinth_enlarged">
                     <div class="modal-background"></div>

@@ -29,26 +29,26 @@ function smoothScroll(ev) {
     });
 }
 
-addModal('isaac');
-addModal('ma100');
-addModal('mythe');
+// addModal('isaac');
+// addModal('ma100');
+// addModal('mythe');
 
-addModal('hex');
-addModal('mario');
-addModal('inventory');
+// addModal('hex');
+// addModal('mario');
+// addModal('inventory');
 
 addModal('labyrinth');
-addModal('lucas');
-addModal('pukwudgie_ontwerp');
-addModal('runner');
-addModal('siteGame');
-addModal('healthGun');
+// addModal('lucas');
+// addModal('pukwudgie_ontwerp');
+// addModal('runner');
+// addModal('siteGame');
+// addModal('healthGun');
 
 function addModal(identifier) {
 
     let object = document.querySelector(`#${identifier}`);
 
-    object.querySelector('.card').addEventListener("click", () => {
+    object.firstElementChild.addEventListener("click", () => {
         document.querySelector('html').classList.add('enable-scroll');
         object.querySelector(`#${identifier}_modal`).classList.add('is-active');
     });
@@ -72,19 +72,19 @@ function addModal(identifier) {
         event.stopPropagation();
     });
 
-    object.querySelector('.card .project_photo').addEventListener("click", (event) => {
-        event.stopPropagation();
-        document.querySelector('html').classList.add('enable-scroll');
-        object.querySelector(`#${identifier}_enlarged`).classList.add('is-active');
-    });
+    // object.querySelector('.card .project_photo').addEventListener("click", (event) => {
+    //     event.stopPropagation();
+    //     document.querySelector('html').classList.add('enable-scroll');
+    //     object.querySelector(`#${identifier}_enlarged`).classList.add('is-active');
+    // });
 
-    object.querySelector('.modal-close').addEventListener("click", () => {
-        document.querySelector('html').classList.remove('enable-scroll');
-        object.querySelector(`#${identifier}_enlarged`).classList.remove('is-active');
-    });
+    // object.querySelector('.modal-close').addEventListener("click", () => {
+    //     document.querySelector('html').classList.remove('enable-scroll');
+    //     object.querySelector(`#${identifier}_enlarged`).classList.remove('is-active');
+    // });
 
-    object.querySelector('.photo > .modal-background').addEventListener("click", () => {
+    object.querySelector('.modal-background').addEventListener("click", () => {
         document.querySelector('html').classList.remove('enable-scroll');
-        object.querySelector(`#${identifier}_enlarged`).classList.remove('is-active');
+        object.querySelector('.modal').classList.remove('is-active');
     });
 }
