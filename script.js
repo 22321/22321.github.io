@@ -13,7 +13,7 @@ document.querySelector('#nav_home').addEventListener("click", () => scrollTo({
 document.querySelector('#nav_profile').addEventListener("click", () => smoothScroll(profile));
 document.querySelector('#nav_project').addEventListener("click", () => smoothScroll(project));
 // document.querySelector('#nav_games').addEventListener("click", () => smoothScroll(games));
-document.querySelector('#nav_ontwerp').addEventListener("click", () => smoothScroll(ontwerp));
+// document.querySelector('#nav_ontwerp').addEventListener("click", () => smoothScroll(ontwerp));
 document.querySelector('#nav_contact').addEventListener("click", () => smoothScroll(contact));
 
 document.querySelector('#header_arrow').addEventListener("click", () => scrollTo({
@@ -40,6 +40,7 @@ addModal('inventory');
 addModal('labyrinth');
 addModal('lucas');
 addModal('pukwudgie_ontwerp');
+addModal('schetsen');
 // addModal('runner');
 // addModal('siteGame');
 // addModal('healthGun');

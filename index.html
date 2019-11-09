@@ -24,9 +24,8 @@
     <nav>
         <span class="link" id="nav_home"><span class="has-text-header">V</span>olken <span
                 class="has-text-header">K</span>oelewijn</span>
-        <span class="link" id="nav_profile">Profiel</span>
-        <span class="link" id="nav_ontwerp">Functioneel ontwerp</span>
-        <span class="link" id="nav_project">Projecten</span>
+            <span class="link" id="nav_project">Projecten</span>
+            <span class="link" id="nav_profile">Profiel</span>
         <span class="link" id="nav_contact">Contact</span>
     </nav>
 
@@ -67,7 +66,7 @@
     <!--///////////////////////DIV 1///////////////////////////////////////////////-->
     <div style="background: white">
         <div class="container" style="padding: 3em 0;">
-            <h1 class="subtitle is-2 has-text-centered">Projecten</h1>
+            <h1 class="subtitle is-2 has-text-centered"  id="projects">Projecten</h1>
 
             <!-- <p class="has-text-grey-dark has-text-centered">
                 Hieronder kunt u schetsen zien die ik gemaakt heb om als game concepten uit te werken.<br>
@@ -1157,11 +1156,137 @@
     </div>
 
     <!--///////////////////////DIV 3///////////////////////////////////////////////-->
-    <div style="background:white;">
+    <div style="background: cornflowerblue; color: white!important;">
         <div class="container" style="padding: 3em 0;">
+            <h1 class="subtitle is-2 has-text-white has-text-centered" style="text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.514);">Schetsen</h1>
+
+
+            <div class="columns">
+
+                <div class="column project" id="schetsen">
+                    <div class="schetsen">
+                        <div class="background imageWrapper project_photo">
+                                            
+                            <p class=" has-text-centered">
+                                Hieronder kunt u schetsen zien die ik gemaakt heb om als game concepten uit te werken.<br>
+                                Als u op de knop onder de foto drukt kunt u meer schetsen en informatie hierover zien.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal" id="schetsen_modal">
+                        <div class="modal-background"></div>
+                        <div class="modal-card">
+                            <header class="modal-card-head">
+                                <p class="modal-card-title">Schetsen</p>
+                                <button class="delete"></button>
+                            </header>
+                            <section class="modal-card-body">
+
+                                <div class="columns">
+                                    <div class="card column">
+                                        <div class="card-content">
+                                            <p>
+                                                Dit project is een game slice. Dat betekend dat mijn team tien seconden
+                                                beeld materiaal
+                                                hebben nagemaakt van een game die al bestaat.<br><br>
+                                                Voor dit project heb ik met 2 andere programmeurs en 3 artists
+                                                samengewerkt.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class='carousel carousel-animated carousel-animate-slide'>
+                                    <div class='carousel-container'>
+                                        <div class='carousel-item has-background is-active'>
+                                            <img class="is-background" src="andere_foto/isaacA.PNG" />
+                                            <div class="title">De game start met een startscherm waar de controls
+                                                weergeven worden</div>
+                                        </div>
+                                        <div class='carousel-item has-background is-active'>
+                                            <img class="is-background" src="andere_foto/isaacB.PNG" />
+                                            <div class="title">Vervolgens spawnt de speler in de room</div>
+                                        </div>
+                                        <div class='carousel-item has-background is-active'>
+                                            <img class="is-background" src="andere_foto/isaacC.PNG" />
+                                            <div class="title">Hier is het doel om alle vijanden te doden door met
+                                                tranen op ze te schieten</div>
+                                        </div>
+                                        <div class='carousel-item has-background is-active'>
+                                            <img class="is-background" src="andere_foto/isaacD.PNG" />
+                                            <div class="title">Maar als de speler zijn drie hartjes aan leven kwijt
+                                                raakt dan verliest hij</div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-navigation is-overlay">
+                                        <div class="carousel-nav-left">
+                                            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="carousel-nav-right">
+                                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="columns">
+                                    <div class="card column">
+                                        <div class="card-content">
+                                            <p>
+                                                In deze game slice moet de speler de vijanden verslaan door op ze te
+                                                schieten tot ze dood gaan,
+                                                De speler heeft zelf 3 hartjes aan leven. Als de speler geraakt wordt
+                                                door een vijand dan verliest hij een half hartje per keer.
+                                                Als de speler alle vijanden kan doden voordat hij zelf dood gaat dan
+                                                heeft hij het spel gewonnen.<br><br>
+                                                Notitie: de code op github laat alleen mijn deel van de scripten zien.
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="columns">
+                                    <div class="card column">
+                                        <div class="card-content">
+                                            <p>
+                                                Hoelang aan gewerkt:<br>
+                                                4 weken
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card column">
+                                        <div class="card-content">
+                                            <p>
+                                                Wat gedaan:<br>
+                                                team leider, programmeren
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <footer class="modal-card-foot"> <button class="close button">Sluiten</button>
+                                <a class="button"
+                                    href="http://22321.hosts.ma-cloud.nl/bewijzenmap/p2.2/IDP/IsaacGameSliceV4/"
+                                    target="_blank">Speel game</a>
+
+                                <a class="button" href="https://github.com/VolkenK/IsaacMyScripts" target="_blank">Code
+                                    op
+                                    Github</a>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--///////////////////////DIV 3///////////////////////////////////////////////-->
+    <div style="background:white;">
+        <div class="container" style="padding: 3em 0;" id="profile">
             <!--///////////////////////////ABOUT ME///////////////////////////////////////////-->
 
-            <h1 class="subtitle is-2 has-text-centered" id="profile">Profiel</h1>
+            <h1 class="subtitle is-2 has-text-centered">Profiel</h1>
 
             <div class="columns">
 
@@ -1224,557 +1349,6 @@
         </div>
     </div>
 
-    <div id="container" class="container">
-
-        <!--///////////////////////Functioneel ontwerp///////////////////////////////////////////////-->
-        <div class="card ontwerp_header" id="ontwerp">
-            <h1 class="subtitle is-3 has-text-white has-text-centered">Functioneel ontwerp</h1>
-        </div>
-
-        <div class="card labyrinth">
-            <div class="card-content">
-                <p class="has-text-grey-dark">
-                    Hieronder kunt u schetsen zien die ik gemaakt heb om als game concepten uit te werken.<br>
-                    Als u op de knop onder de foto drukt kunt u meer schetsen en informatie hierover zien. </p>
-                </p>
-            </div>
-        </div>
-
-        <div class="columns">
-            <div class="column project">
-                <div class="card labyrinth">
-                    <div class="card-header">
-                        <p class="card-header-title has-text-centered">
-                            Labyrinth puzzle adventure game
-                        </p>
-                    </div>
-                    <div class="card-content">
-                        <div class="imageWrapper project_photo">
-                            <img src="schetsen/labMain.jpg" alt="site foto" />
-                            <i class="fas fa-search-plus"></i>
-                        </div>
-                        <!-- <img id="labyrinth_gif" src="Labyrinth.jpg" alt="Isaac GIF" class="project_photo"> -->
-                        <p class="has-text-grey-dark">
-                            <button class="button is-fullwidth">Meer informatie </button>
-                            <!-- Verken een doolhof waarin de kamers onnatuurlijk op elkaar aansluiten. -->
-                        </p>
-                    </div>
-                </div>
-                <!-- <div class="modal" id="labyrinth_modal">
-                    <div class="modal-background"></div>
-                    <div class="modal-card">
-                        <header class="modal-card-head">
-                            <p class="modal-card-title">Labyrinth puzzle adventure game</p>
-                            <button class="delete"></button>
-                        </header>
-                        <section class="modal-card-body">
-
-
-                            <div class="columns">
-                                <div class="card column">
-                                    <div class="card-content">
-                                        <p>
-                                            Dit is een concept voor een 3D puzzle/adventure game ala de Zelda
-                                            games.<br><br>
-                                            Hierin is het scenario dat de speler dit labyrinth binnen gaat om de
-                                            eindbaas te verslaan voordat hij uitzichzelf ontwaakt.<br>
-                                            <br>
-                                            Bij de start van het spel kan de speler maar een richting op door de kamers
-                                            heen.
-                                            hierbij eindigt de speler in de final boss room. Echter zit de boss in een
-                                            kristal opgesloten.
-                                            Zodra de speler het kristal nadert sluit de ingang zichzelf af en ontwaakt
-                                            de dungeon.<br>
-                                            <img src="schetsen/labStart.jpg" alt="site foto" /><br><br>
-                                            Ingame kan de speler altijd een kaart zijn van waar hij zich in de dungeon
-                                            bevind.
-                                            De room layout ziet eruit als een grid van 5 bij 5 kamers.<br>
-                                            <img src="schetsen/labLayout.jpg" alt="site foto" /><br><br>
-                                            Maar er is een twist, de kamers sluiten niet op een logische manier aan
-                                            elkaar aan.
-                                            Bijvoorbeeld: je zou verwachten dat als je van kamer 7 naar rechts zou gaan
-                                            dat je
-                                            in kamer 8 terecht komt. Maar eigenlijk kom je dan in kamer 20 terecht.<br>
-                                            Ook kan je bijvoorbeeld in een kamer maar twee uitgangen hebben al zou het
-                                            er normaal 4 moeten hebben.
-                                            Of dat je een kamer uitloopt om aan de andere kant van die kamer weer binnen
-                                            komen te lopen.<br>
-                                            <img src="schetsen/labLogic.jpg" alt="site foto" /><br><br>
-                                            Misschien zijn sommige kamers ook wel groter zijn wat ze lijken.<br>
-                                            <img src="schetsen/labMystery.jpg" alt="site foto" /><br><br>
-                                            Om de game te winnen moet je de puzzels in de kamers oplossen zodat de
-                                            kamers uiteindelijk op hun juiste positie eindigen.
-                                            Hierna kan je de boss ontwaken en hem verslaan.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </section>
-                        <footer class="modal-card-foot"> <button class="close button">Sluiten</button>
-                        </footer>
-                    </div>
-                </div> -->
-                <!-- Foto stukje -->
-                <div class="modal photo" id="labyrinth_enlarged">
-                    <div class="modal-background"></div>
-                    <div class="modal-content">
-                        <img src="schetsen/labFull.jpg" alt="foto a" class="project_photo">
-                    </div>
-                    <button class="modal-close is-large" aria-label="close"></button>
-                </div>
-            </div>
-
-            <div class="column project" id="lucas">
-                <div class="card lucas">
-                    <div class="card-header">
-                        <p class="card-header-title has-text-centered">
-                            Dualpurpose mechanic shooter
-                        </p>
-                    </div>
-                    <div class="card-content">
-                        <div class="imageWrapper project_photo">
-                            <img src="schetsen/tankMain.jpg" alt="site foto" />
-                            <i class="fas fa-search-plus"></i>
-                        </div>
-                        <p class="has-text-grey-dark">
-                            <button class="button is-fullwidth">Meer informatie </button>
-                        </p>
-                    </div>
-                </div>
-                <div class="modal" id="lucas_modal">
-                    <div class="modal-background"></div>
-                    <div class="modal-card">
-                        <header class="modal-card-head">
-                            <p class="modal-card-title"> mechanic</p>
-                            <button class="delete"></button>
-                        </header>
-                        <section class="modal-card-body">
-
-                            <div class="columns">
-                                <div class="card column">
-                                    <div class="card-content">
-                                        <p>
-                                            Dit is een concept voor een topdown shooter game.<br><br>
-                                            Het scenario hierin is dat je in een tank rijdt en alle vijanden moet
-                                            verslaan met als thema gokken.<br><br>
-                                            In deze game wil ik graag veel met dualpurpos mechanics werken. Dat betekend
-                                            dat een actie meerder functies heeft.<br>
-                                            Bijvoorbeeld dat je healthbar en je geselecteerde wapen dezelfde meter
-                                            delen.<br>
-                                            <img src="schetsen/tankExample.jpg" alt="site foto" /><br><br>
-                                            De verschillende wapens die je bij je draagt hebben allemaal een ander
-                                            schiet gedrag of effect.
-                                            Hierdoor is het in sommige situaties verstandiger om opzettelijk schade te
-                                            nemen zodat je naar een
-                                            wapen overgaat dat effectiever is om de huidige vijand te verslaan.<br><br>
-                                            Ook vind ik het een leuk idee om geld ook als ammunitie te gebruiken. Er
-                                            kunnen mogelijk een paar
-                                            soorten geld zijn die je wel gecontroleerd af kan wisselen. Deze zouden dan
-                                            per kogel
-                                            meer schade doen maar ook een kleiner bereik hebben.<br>
-                                            <img src="schetsen/tankAmmo.jpg" alt="site foto" /><br><br>
-                                            Verder kan de speler ook naar andere niveaus van de arena reizen. Hieronder
-                                            is een mockup van het gamescherm.<br>
-                                            <img src="schetsen/tankGamescreen.jpg" alt="site foto" /><br>
-                                            <img src="schetsen/tankUIlayer.jpg" alt="site foto" /><br><br>
-                                            De controles had ik origineel uitgedacht voor een super Nintendo controller.
-                                            Maar ik heb ook een versie gemaakt die compatibel is met een telefoon
-                                            scherm.<br>
-                                            <img src="schetsen/tankController.jpg" alt="site foto" /><br>
-                                            <img src="schetsen/tankButtonCollision.jpg" alt="site foto" />
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </section>
-                        <footer class="modal-card-foot"> <button class="close button">Sluiten</button>
-                        </footer>
-                    </div>
-                </div>
-                <!-- Foto stukje -->
-                <div class="modal photo" id="lucas_enlarged">
-                    <div class="modal-background"></div>
-                    <div class="modal-content">
-                        <img src="schetsen/tankGeneralSummary.jpg" alt="foto a" class="project_photo">
-                    </div>
-                    <button class="modal-close is-large" aria-label="close"></button>
-                </div>
-            </div>
-
-            <div class="column project" id="pukwudgie_ontwerp">
-                <div class="card pukwudgie_ontwerp">
-                    <div class="card-header">
-                        <p class="card-header-title has-text-centered">
-                            2D puzzle platformer
-                        </p>
-                    </div>
-                    <div class="card-content">
-                        <div class="imageWrapper project_photo">
-                            <img src="schetsen/puk5.jpg" alt="site foto" />
-                            <i class="fas fa-search-plus"></i>
-                        </div>
-                        <p class="has-text-grey-dark">
-                            <button class="button is-fullwidth">Meer informatie </button>
-                        </p>
-                    </div>
-                </div>
-                <!-- Foto stukje -->
-                <div class="modal photo" id="pukwudgie_ontwerp_enlarged">
-                    <div class="modal-background"></div>
-                    <div class="modal-content">
-                        <img src="schetsen/puk5.jpg" alt="foto a" class="project_photo">
-                    </div>
-                    <button class="modal-close is-large" aria-label="close"></button>
-                </div>
-            </div>
-
-        </div>
-
-
-
-        <body>
-            <!--///////////////////////PROJECTEN///////////////////////////////////////////////-->
-            <div class="card projecs_header" id="projects">
-                <h1 class="subtitle is-3 has-text-white has-text-centered">Projecten</h1>
-            </div>
-
-            <div class="card labyrinth">
-                <div class="card-content">
-                    <p class="has-text-grey-dark">
-                        Hieronder staan mechanics en projecten die ik onlangs gemaakt heb om te begrijpen hoe ik ze
-                        maken moet.</p>
-                    </p>
-                </div>
-            </div>
-
-            <div class="columns">
-
-                <div class="column project" id="hex">
-                    <div class="card hex">
-                        <div class="card-header">
-                            <p class="card-header-title has-text-centered">
-                                Hexagon Grid
-                            </p>
-                        </div>
-                        <div class="card-content">
-                            <div class="imageWrapper project_photo">
-                                <img src="thumbnails/hexgridThumb.PNG" alt="hex GIF" />
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                            <!-- <img id="hex_PNG" src="hexGrid.jpg" alt="hex GIF" class="project_photo"> -->
-                            <p class="has-text-grey-dark">
-                            </p>
-                            <button class="button is-fullwidth">Meer informatie</button>
-                        </div>
-                    </div>
-                    <!-- Foto stukje -->
-                    <div class="modal photo" id="hex_enlarged">
-                        <div class="modal-background"></div>
-                        <div class="modal-content">
-                            <!--<video src="gif_en_vids/hexGridVid.mp4" alt="foto a" class="project_photo">-->
-                            <video width="1100" height="600" controls>
-                                <source src="gif_en_vids/hexGridVid.mp4" type="video/mp4">
-                                Your browser does not support the video tag.</video>
-                        </div>
-                        <button class="modal-close is-large" aria-label="close"></button>
-                    </div>
-                </div>
-                <!--/////////////////////////////Super mario twist///////////////////////////////////////////-->
-                <div class="column project" id="mario">
-                    <div class="card mario">
-                        <div class="card-header">
-                            <p class="card-header-title has-text-centered">
-                                Super Mario gamedesign twist
-                            </p>
-                        </div>
-                        <div class="card-content">
-                            <div class="imageWrapper project_photo">
-                                <img src="thumbnails/marioThumbnail.PNG" alt="mario GIF" />
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                            <button class="button is-fullwidth">Meer informatie</button>
-                        </div>
-                    </div>
-                    <!-- Foto stukje -->
-                    <div class="modal photo" id="mario_enlarged">
-                        <div class="modal-background"></div>
-                        <div class="modal-content">
-                            <video width="1100" height="600" controls>
-                                <source src="gif_en_vids/marioVid.mp4" type="video/mp4">
-                                Your browser does not support the video tag.</video>
-                        </div>
-                        <button class="modal-close is-large" aria-label="close"></button>
-                    </div>
-                </div>
-
-
-                <div class="column project" id="inventory">
-                    <div class="card inventory">
-                        <div class="card-header">
-                            <p class="card-header-title has-text-centered">
-                                Inventory system
-                            </p>
-                        </div>
-                        <div class="card-content">
-                            <div class="imageWrapper project_photo">
-                                <img src="andere_foto/inventoryB.PNG" alt="inventory GIF" />
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                            <button class="button is-fullwidth">Meer informatie </button>
-                        </div>
-                    </div>
-                    <!-- Foto stukje -->
-                    <div class="modal photo" id="inventory_enlarged">
-                        <div class="modal-background"></div>
-                        <div class="modal-content">
-                            <video width="1100" height="600" controls>
-                                <source src="gif_en_vids/inventoryVid.mp4" type="video/mp4">
-                                Your browser does not support the video tag.</video>
-                        </div>
-                        <button class="modal-close is-large" aria-label="close"></button>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="card labyrinth">
-                <div class="card-content">
-                    <p class="has-text-grey-dark">
-                        Onderstaande projecten zijn groeps opdrachten voor mijn opleiding geweest.<br>
-                        Met deze projecten ben ik de groepsleider geweest en heb ik zelf ook wat geprogrammeerd. </p>
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="columns">
-
-
-                <div class="column project" id="isaac">
-                    <div class="card isaac">
-                        <div class="card-header">
-                            <p class="card-header-title has-text-centered">
-                                GameSlice: The binding of Isaac
-                            </p>
-                        </div>
-                        <div class="card-content">
-                            <div class="imageWrapper project_photo">
-                                <img src="andere_foto/isaacB.PNG" alt="isaac foto" />
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                            <button class="button is-fullwidth">Meer informatie </button>
-                        </div>
-                    </div>
-                    <!-- Foto stukje -->
-                    <div class="modal photo" id="isaac_enlarged">
-                        <div class="modal-background"></div>
-                        <div class="modal-content">
-                            <video width="1100" height="600" controls>
-                                <source src="gif_en_vids/isaacVid.mp4" type="video/mp4">
-                                Your browser does not support the video tag.</video>
-                        </div>
-                        <button class="modal-close is-large" aria-label="close"></button>
-                    </div>
-                </div>
-
-                <div class="column project" id="ma100">
-                    <div class="card ma100">
-                        <div class="card-header">
-                            <p class="card-header-title has-text-centered">
-                                Ma100 Augmented Reality app
-                            </p>
-                        </div>
-                        <div class="card-content">
-                            <div class="imageWrapper project_photo">
-                                <img src="andere_foto/appB.PNG" alt="ma100 foto" />
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                            <button class="button is-fullwidth">Meer informatie </button>
-                        </div>
-                    </div>
-                    <!-- Foto stukje -->
-                    <div class="modal photo" id="ma100_enlarged">
-                        <div class="modal-background"></div>
-                        <div class="modal-content">
-                            <video controlls muted width="350" height="200" controls>
-                                <source src="gif_en_vids/Ma100app_Trim.mp4" type="video/mp4">
-                                Your browser does not support the video tag.</video>
-                        </div>
-                        <button class="modal-close is-large" aria-label="close"></button>
-                    </div>
-                </div>
-
-                <div class="column project" id="mythe">
-                    <!--Mythe pukwudgie-->
-                    <div class="card mythe">
-                        <div class="card-header">
-                            <p class="card-header-title has-text-centered">
-                                Mythe van de Pukwudgie
-                            </p>
-                        </div>
-                        <div class="card-content">
-                            <div class="imageWrapper project_photo">
-                                <img src="andere_foto/mf2.PNG" alt="mythe foto" />
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                            <button class="button is-fullwidth">Meer informatie</button>
-                        </div>
-                    </div>
-                    <!-- Foto stukje -->
-                    <div class="modal photo" id="mythe_enlarged">
-                        <div class="modal-background"></div>
-                        <div class="modal-content">
-                            <video width="1100" height="600" controls>
-                                <source src="gif_en_vids/MhyteDemo.mp4" type="video/mp4">
-                                Your browser does not support the video tag.</video>
-                        </div>
-                        <button class="modal-close is-large" aria-label="close"></button>
-                    </div>
-                </div>
-            </div>
-
-            <!--///////////////////////////ABOUT ME///////////////////////////////////////////-->
-
-            <div class="profile_header card" id="profile">
-                <h1 class="subtitle is-3 has-text-centered">Profiel</h1>
-            </div>
-
-            <div class="columns">
-
-                <div class="column is-one-third-desktop">
-                    <div class="card aboutMe">
-                        <div class="card-content aboutMeContent">
-                            <img src="andere_foto/v.jpg" id="selfie">
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="column">
-                    <div class="mijnTalenten card">
-                        <div class="card-header">
-                            <p class="card-header-title has-text-centered">
-                                Over mij.
-                            </p>
-                        </div>
-                        <div class="card-content">
-                            Mijn naam is Volken Koelewijn,<br> ik ben geboren op 13 September 1999
-                            en woon in Uithoorn. Ik volg momenteel een opleiding voor Game Developer op het Mediacollege
-                            Amsterdam. <br>
-                            Games heb ik al gespeeld zolang als ik mij kan herrineren.
-                            Ik ben gefacineerd door dit medium en wil altijd meer leren over hoe games in elkaar zitten.
-                            verder vind ik het ook leuk om te tekenen en om eigen draaien aan concepten te geven.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="column">
-                    <div class="mijnDoel card">
-                        <div class="card-header">
-                            <p class="card-header-title has-text-centered">
-                                Mijn Doel!
-                            </p>
-                        </div>
-                        <div class="card-content">
-                            Mijn doel is dat ik uiteindelijk mijn ideeën in games kan veranderen met een team of eigen
-                            bedrijf.
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="columns">
-
-                <div class="column">
-                    <div class="mijnTalenten card">
-                        <div class="card-header">
-                            <p class="card-header-title has-text-centered">
-                                Mijn skills
-                            </p>
-                        </div>
-                        <div class="card-content">
-
-                            Ik ben creatief en kan goed comminuceren. Verder heb ik veel kennis over GameDesign en
-                            GameFeel.
-                            Ook ben ik leiding gevend ingesteld en kan ik goed plannen, taken verdelen en motiveren.<br>
-                            Met programmeren werk ik in Unity.
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="column">
-                    <div class="watLeren card">
-                        <div class="card-header">
-                            <p class="card-header-title has-text-centered">
-                                Wat wil ik leren
-                            </p>
-                        </div>
-                        <div class="card-content">
-                            <p>
-                                Voor dit stadium in mijn opleiding wil ik graag meer leren over hoe game design en
-                                prototyping er aan
-                                toe gaan bij game bedrijven zelf. En hoe ik mijn kennis daarover verbreden kan.
-
-
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="column">
-                    <div class="watLeren card">
-                        <div class="card-header">
-                            <p class="card-header-title has-text-centered">
-                                Curriculum Vitae
-                            </p>
-                        </div>
-                        <div class="card-content">
-                            <p class="has-text-centered">
-                                <a href="https://drive.google.com/file/d/1CivY_Z1RUXEcyWyvW2FN2ShS65JvI4Uc/view?usp=sharing"
-                                    target="_blank" class="button">Klik hier om mijn Curriculum Vitae te bekijken</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <br>
-
-            <!--/////////////////////////////FOOTER///////////////////////////////////////// -->
-            <div class="card contact_header" id="contact">
-                <h1 class="subtitle is-3 has-text-white has-text-centered">Contact</h1>
-            </div>
-
-            <div class="card contactList">
-                <div class="card-content">
-                    <div class="columns has-text-centered">
-                        <div class="column">
-                            <a href="https://github.com/volkenK" target="__blank">
-                                <i class="icon fab fa-github"></i></a>
-                        </div>
-                        <div class="column">
-                            <a href="https://www.linkedin.com/in/volken-koelewijn-861651151/" target="__blank">
-                                <i class="icon fab fa-linkedin"></i></a>
-                        </div>
-                        <div class="column">
-                            <a href="mailto:volkenkoelewijn@gmail.com">
-                                <i class="icon fas fa-envelope"></i></a>
-                        </div>
-                        <div class="column">
-                            <a target="__blank" title="Klik hier om mijn Curriculum Vitae te bekijken"
-                                href="https://drive.google.com/file/d/1CivY_Z1RUXEcyWyvW2FN2ShS65JvI4Uc/view?usp=sharing">
-                                <span style="width: auto; height: 1em;" class="icon font-alt">CV</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </div>
     <script type="text/javascript" src="bulma-carousel.min.js"></script>
     <script src="script.js"></script>
 

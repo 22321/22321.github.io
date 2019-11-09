@@ -79,16 +79,33 @@ nav {
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
 }
 
+.schetsen .imageWrapper {
+  display: flex;
+  height: 300px;
+  transition: .2s;
+}
+
+.schetsen .imageWrapper:hover {
+  transform: scale(1.05);
+}
+
+.schetsen .imageWrapper p {
+  margin: auto;
+  font-size: 130%;
+  padding: 0 3em;
+}
 
 .socials {
-  position: absolute;
+  position: fixed;
   right: 0;
-  top: 35vh;
+  top: 50%;
+  margin-top: -115px;
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
   background-color: rgba(255, 255, 255, 0.15);
   width: 75px;
   padding: 0.2em 0;
+  z-index: 10;
 }
 
 .socials>.column {
@@ -105,7 +122,7 @@ nav {
 }
 
 .socials .icon:hover {
-  color: white;
+  color: black;
 }
 
 .background {
@@ -239,7 +256,6 @@ nav {
   margin: 1em -.75em !important;
 }
 
-
 .card-header-title {
   color: black;
   padding: .75em 0;
@@ -286,6 +302,10 @@ nav {
 
   #aboutMeText {
     margin: 0;
+  }
+
+  .columns {
+    margin: 1em !important;
   }
 }
 
@@ -450,12 +470,12 @@ nav {
 
 .contact_header {
   background-color: #681985e7;
-  padding: 2px;
+  padding: 3em 2px;
 }
 
 .contactList {
   background-color: #3c413dee;
-  padding: 2px;
+  padding: 0 2px 4em;
 }
 
 .contactList a {
