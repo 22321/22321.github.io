@@ -3,6 +3,8 @@ let project = document.querySelector('#projects');
 let contact = document.querySelector('#contact');
 let games = document.querySelector('#games');
 let ontwerp = document.querySelector('#ontwerp');
+let samenwerken = document.querySelector('#samenwerken');
+let functional = document.querySelector('#functional');
 let header = document.querySelector('.fullscreen-header');
 let carousels = bulmaCarousel.attach(); 
 
@@ -12,21 +14,22 @@ document.querySelector('#nav_home').addEventListener("click", () => scrollTo({
 }));
 document.querySelector('#nav_profile').addEventListener("click", () => smoothScroll(profile));
 document.querySelector('#nav_project').addEventListener("click", () => smoothScroll(project));
+document.querySelector('#nav_samenwerken').addEventListener("click", () => smoothScroll(samenwerken));
+document.querySelector('#nav_functional').addEventListener("click", () => smoothScroll(functional));
 // document.querySelector('#nav_games').addEventListener("click", () => smoothScroll(games));
 // document.querySelector('#nav_ontwerp').addEventListener("click", () => smoothScroll(ontwerp));
-document.querySelector('#nav_contact').addEventListener("click", () => smoothScroll(contact));
+// document.querySelector('#nav_contact').addEventListener("click", () => smoothScroll(contact));
 
 document.querySelector('#header_arrow').addEventListener("click", () => scrollTo({
     top: header.clientHeight,
-    behavior: "smooth"
+    behavior: "smooth"  
 }))
 
 function smoothScroll(ev) {
     console.log('ながさき');
-    scrollTo({
-        top: ev.offsetTop + header.clientHeight - 50,
+    ev.scrollIntoView({
         behavior: "smooth"
-    });
+    })
 }
 
 addModal('isaac');
@@ -88,4 +91,8 @@ function addModal(identifier) {
         document.querySelector('html').classList.remove('enable-scroll');
         object.querySelector('.modal').classList.remove('is-active');
     });
+}
+
+function extend() {
+    document.querySelector('.nav_items').classList.toggle('extended');
 }

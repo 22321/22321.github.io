@@ -290,6 +290,14 @@ nav {
   margin: 0 1em;
 }
 
+nav button {
+  display: none !important;
+}
+
+.nav_items {
+  display: flex;
+  width: 100%;
+}
 
 @media screen and (max-width: 700px) {
   #selfie {
@@ -307,7 +315,34 @@ nav {
   .columns {
     margin: 1em !important;
   }
+
+  nav {
+    display: block;
+  }
+  
+  nav .nav_items {
+    transition: .3s;
+    margin-top: -100%;
+  }
+
+  nav .extended {
+    margin-top: 0;
+  }
+
+  nav .link {
+    width: 100%;
+  }
+
+  nav button {
+    display: inline-flex !important;
+  }
+  
+  .nav_items {
+    display: block;
+    width: 100%;
+  }
 }
+
 
 .mijnTalenten {
   background-color: #4e524fee;
@@ -620,4 +655,11 @@ nav {
 .imageWrapper>img:hover+i,
 .imageWrapper>i:hover {
   font-size: 160%;
+}
+
+.profile_bg {
+  background-image: url('andere_foto/2000b865-ab47-45b2-a79e-09ab8f769b7b.jfif');
+  background-size: cover;
+  background-blend-mode: screen;
+  background-color: rgba(255, 255, 255, 0.56);
 }

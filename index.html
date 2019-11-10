@@ -22,15 +22,20 @@
 
 <body>
     <nav>
-        <span class="link" id="nav_home"><span class="has-text-header">V</span>olken <span
-                class="has-text-header">K</span>oelewijn</span>
+        <button onclick="extend()" class="button is-medium"><i class="fas fa-bars"></i></button>
+        <div class="nav_items">
+            <span class="link" id="nav_home"><span class="has-text-header">V</span>olken <span
+                    class="has-text-header">K</span>oelewijn</span>
             <span class="link" id="nav_project">Projecten</span>
+            <span class="link" id="nav_samenwerken">Samenwerking</span>
+            <span class="link" id="nav_functional">Functioneel ontwerpen</span>
             <span class="link" id="nav_profile">Profiel</span>
-        <span class="link" id="nav_contact">Contact</span>
+            <!-- <span class="link" id="nav_contact">Contact</span> -->
+        </div>
     </nav>
 
     <div class="socials has-text-centered is-hidden-mobile">
-        <div class="column">
+        <div class="column">    
             <a href="https://github.com/volkenK" target="__blank">
                 <i class="icon fab fa-github"></i></a>
         </div>
@@ -64,9 +69,9 @@
     </header>
 
     <!--///////////////////////DIV 1///////////////////////////////////////////////-->
-    <div style="background: white">
+    <div style="background: white" id="projects">
         <div class="container" style="padding: 3em 0;">
-            <h1 class="subtitle is-2 has-text-centered"  id="projects">Projecten</h1>
+            <h1 class="subtitle is-2 has-text-centered">Projecten</h1>
 
             <!-- <p class="has-text-grey-dark has-text-centered">
                 Hieronder kunt u schetsen zien die ik gemaakt heb om als game concepten uit te werken.<br>
@@ -671,7 +676,7 @@
     </div>
 
     <!--///////////////////////DIV 2///////////////////////////////////////////////-->
-    <div class="background" style="color: white!important;">
+    <div class="background" style="color: white!important;" id="samenwerken">
         <div class="container" style="padding: 3em 0;">
             <h1 class="subtitle is-2 has-text-white has-text-centered">Samenwerkings-projecten</h1>
 
@@ -1156,9 +1161,10 @@
     </div>
 
     <!--///////////////////////DIV 3///////////////////////////////////////////////-->
-    <div style="background: cornflowerblue; color: white!important;">
+    <div style="background: cornflowerblue; color: white!important;" id="functional">
         <div class="container" style="padding: 3em 0;">
-            <h1 class="subtitle is-2 has-text-white has-text-centered" style="text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.514);">Schetsen</h1>
+            <h1 class="subtitle is-2 has-text-white has-text-centered"
+                style="text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.514);">Schetsen</h1>
 
 
             <div class="columns">
@@ -1166,9 +1172,10 @@
                 <div class="column project" id="schetsen">
                     <div class="schetsen">
                         <div class="background imageWrapper project_photo">
-                                            
+
                             <p class=" has-text-centered">
-                                Hieronder kunt u schetsen zien die ik gemaakt heb om als game concepten uit te werken.<br>
+                                Hieronder kunt u schetsen zien die ik gemaakt heb om als game concepten uit te
+                                werken.<br>
                                 Als u op de knop onder de foto drukt kunt u meer schetsen en informatie hierover zien.
                             </p>
                         </div>
@@ -1281,8 +1288,8 @@
         </div>
     </div>
 
-    <!--///////////////////////DIV 3///////////////////////////////////////////////-->
-    <div style="background:white;">
+    <!--///////////////////////DIV 4///////////////////////////////////////////////-->
+    <div class="profile_bg" style="text-shadow: 0px 0px 3px white;">
         <div class="container" style="padding: 3em 0;" id="profile">
             <!--///////////////////////////ABOUT ME///////////////////////////////////////////-->
 
@@ -1292,9 +1299,7 @@
 
                 <div class="column is-one-third">
                     <div class="labyrinth">
-                        <div class="">
-                            <img src="andere_foto/v.jpg" alt="site foto" />
-                        </div>
+                        <img src="andere_foto/profielfoto.jpg" alt="site foto" />
                     </div>
                 </div>
 
@@ -1304,7 +1309,7 @@
                         <p class="card-header-title is-size-5">
                             Over mij.
                         </p>
-                        <p style="font-weight: 100">
+                        <p style="font-weight: 600; font-size: 114%;">
                             Mijn naam is Volken Koelewijn,<br> ik ben geboren op 13 September 1999
                             en woon in Uithoorn. Ik volg momenteel een opleiding voor Game Developer op het Mediacollege
                             Amsterdam. <br>
