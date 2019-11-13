@@ -125,6 +125,7 @@ nav {
   color: black;
 }
 
+
 .background {
   background-image: url('andere_foto/20181111_140228.jpg');
   background-size: cover;
@@ -133,11 +134,18 @@ nav {
   background-color: cornflowerblue;
 }
 
+.background-color {
+  background-color: #3a80ff;
+}
+
 .background .subtitle,
 .background .card-header-title,
 .background {
   color: rgb(233, 230, 230) !important;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.514);
+}
+.background-color .card-header-title {
+  color: white;
 }
 
 .background .modal {
@@ -544,7 +552,8 @@ nav button {
 .modal-card>.modal-card-body {
   color: white;
   /* background-image: url('andere_foto/image-46448313-navy-blue-background.jpg');*/
-  background: #76a5fb;
+  /* background: #76a5fb; */
+  background: #efefef;
 }
 
 .modal-card-body .columns {
@@ -662,4 +671,20 @@ nav button {
   background-size: cover;
   background-blend-mode: screen;
   background-color: rgba(255, 255, 255, 0.56);
+}
+
+.unity_photo {
+  position: absolute !important;
+  width: 76px;
+  top: 5px;
+  right: 5px;
+  z-index: 100;
+  min-height: 0px !important;
+  background-color: rgba(255,255,255,0.7);
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.ytp-expand-pause-overlay .ytp-pause-overlay {
+  display: none!important;
 }

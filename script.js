@@ -91,6 +91,8 @@ function addModal(identifier) {
         document.querySelector('html').classList.remove('enable-scroll');
         object.querySelector('.modal').classList.remove('is-active');
     });
+
+    object.querySelector('.imageWrapper').insertAdjacentHTML('beforeend', '<img src="thumbnails/Official_unity_logo.png" class="unity_photo">');
 }
 
 function extend() {
