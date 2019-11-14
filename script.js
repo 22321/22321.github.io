@@ -3,26 +3,33 @@ let project = document.querySelector('#projects');
 let contact = document.querySelector('#contact');
 let games = document.querySelector('#games');
 let ontwerp = document.querySelector('#ontwerp');
+let samenwerken = document.querySelector('#samenwerken');
+let functional = document.querySelector('#functional');
 let header = document.querySelector('.fullscreen-header');
 let carousels = bulmaCarousel.attach(); 
 
+document.querySelector('#nav_home').addEventListener("click", () => scrollTo({
+    top: 0,
+    behavior: "smooth"
+}));
 document.querySelector('#nav_profile').addEventListener("click", () => smoothScroll(profile));
 document.querySelector('#nav_project').addEventListener("click", () => smoothScroll(project));
+document.querySelector('#nav_samenwerken').addEventListener("click", () => smoothScroll(samenwerken));
+document.querySelector('#nav_functional').addEventListener("click", () => smoothScroll(functional));
 // document.querySelector('#nav_games').addEventListener("click", () => smoothScroll(games));
-document.querySelector('#nav_ontwerp').addEventListener("click", () => smoothScroll(ontwerp));
-document.querySelector('#nav_contact').addEventListener("click", () => smoothScroll(contact));
+// document.querySelector('#nav_ontwerp').addEventListener("click", () => smoothScroll(ontwerp));
+// document.querySelector('#nav_contact').addEventListener("click", () => smoothScroll(contact));
 
 document.querySelector('#header_arrow').addEventListener("click", () => scrollTo({
     top: header.clientHeight,
-    behavior: "smooth"
+    behavior: "smooth"  
 }))
 
 function smoothScroll(ev) {
     console.log('ながさき');
-    scrollTo({
-        top: ev.offsetTop + header.clientHeight - 50,
+    ev.scrollIntoView({
         behavior: "smooth"
-    });
+    })
 }
 
 addModal('isaac');
@@ -36,15 +43,16 @@ addModal('inventory');
 addModal('labyrinth');
 addModal('lucas');
 addModal('pukwudgie_ontwerp');
-addModal('runner');
-addModal('siteGame');
-addModal('healthGun');
+addModal('schetsen');
+// addModal('runner');
+// addModal('siteGame');
+// addModal('healthGun');
 
 function addModal(identifier) {
 
     let object = document.querySelector(`#${identifier}`);
 
-    object.querySelector('.card').addEventListener("click", () => {
+    object.firstElementChild.addEventListener("click", () => {
         document.querySelector('html').classList.add('enable-scroll');
         object.querySelector(`#${identifier}_modal`).classList.add('is-active');
     });
@@ -68,19 +76,25 @@ function addModal(identifier) {
         event.stopPropagation();
     });
 
-    object.querySelector('.card .project_photo').addEventListener("click", (event) => {
-        event.stopPropagation();
-        document.querySelector('html').classList.add('enable-scroll');
-        object.querySelector(`#${identifier}_enlarged`).classList.add('is-active');
+    // object.querySelector('.card .project_photo').addEventListener("click", (event) => {
+    //     event.stopPropagation();
+    //     document.querySelector('html').classList.add('enable-scroll');
+    //     object.querySelector(`#${identifier}_enlarged`).classList.add('is-active');
+    // });
+
+    // object.querySelector('.modal-close').addEventListener("click", () => {
+    //     document.querySelector('html').classList.remove('enable-scroll');
+    //     object.querySelector(`#${identifier}_enlarged`).classList.remove('is-active');
+    // });
+
+    object.querySelector('.modal-background').addEventListener("click", () => {
+        document.querySelector('html').classList.remove('enable-scroll');
+        object.querySelector('.modal').classList.remove('is-active');
     });
 
-    object.querySelector('.modal-close').addEventListener("click", () => {
-        document.querySelector('html').classList.remove('enable-scroll');
-        object.querySelector(`#${identifier}_enlarged`).classList.remove('is-active');
-    });
+    object.querySelector('.imageWrapper').insertAdjacentHTML('beforeend', '<img src="thumbnails/Official_unity_logo.png" class="unity_photo">');
+}
 
-    object.querySelector('.photo > .modal-background').addEventListener("click", () => {
-        document.querySelector('html').classList.remove('enable-scroll');
-        object.querySelector(`#${identifier}_enlarged`).classList.remove('is-active');
-    });
+function extend() {
+    document.querySelector('.nav_items').classList.toggle('extended');
 }

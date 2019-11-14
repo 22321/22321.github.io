@@ -12,7 +12,7 @@ body {
   background-size: normal;
   background-position-x: 10em;
   animation: background-image linear 800s infinite forwards;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   color: black;
 }
 
@@ -49,6 +49,119 @@ nav {
   display: flex;
   z-index: 35;
   box-shadow: 0px 1px 8px #47464699;
+}
+
+.project .project_photo::after {
+  content: "More info";
+}
+
+.project:hover {
+  cursor: pointer;
+}
+
+.project:hover .project_photo::after {
+  opacity: .9;
+}
+
+.project .project_photo::after {
+  content: "More info";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -16px -50px;
+  z-index: 1;
+  color: white;
+  background: #e66f4a;
+  opacity: 0;
+  transition: .3s;
+  padding: 0.3em 1em;
+  border-radius: 5px;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
+}
+
+.schetsen .imageWrapper {
+  display: flex;
+  height: 300px;
+  transition: .2s;
+}
+
+.schetsen .imageWrapper:hover {
+  transform: scale(1.05);
+}
+
+.schetsen .imageWrapper p {
+  margin: auto;
+  font-size: 130%;
+  padding: 0 3em;
+}
+
+.socials {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  margin-top: -115px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.15);
+  width: 75px;
+  padding: 0.2em 0;
+  z-index: 10;
+}
+
+.socials>.column {
+  padding: 0.5em 0.8em 0.5em 0;
+}
+
+.socials .icon {
+  font-size: 250%;
+}
+
+.socials .column:last-child .icon {
+  font-size: 200%;
+  padding-left: 0.4em;
+}
+
+.socials .icon:hover {
+  color: black;
+}
+
+
+.background {
+  background-image: url('andere_foto/20181111_140228.jpg');
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-position: center;
+  background-color: cornflowerblue;
+}
+
+.background-color {
+  background-color: #3a80ff;
+}
+
+.background .subtitle,
+.background .card-header-title,
+.background {
+  color: rgb(233, 230, 230) !important;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.514);
+}
+.background-color .card-header-title {
+  color: white;
+}
+
+.background .modal {
+  text-shadow: none;
+}
+
+.footer {
+  background: #1b1b1b !important;
+}
+
+.footer a {
+  color: white;
+}
+
+.footer a:hover {
+  color: #e66f4a;
 }
 
 .fullscreen-header {
@@ -108,7 +221,7 @@ nav {
 
 .subtitle {
   font-family: 'K2D', sans-serif;
-  color: black !important;
+  color: black;
   font-weight: bold;
 }
 
@@ -151,9 +264,9 @@ nav {
   margin: 1em -.75em !important;
 }
 
-
 .card-header-title {
   color: black;
+  padding: .75em 0;
 }
 
 .project>.card:hover {
@@ -185,6 +298,14 @@ nav {
   margin: 0 1em;
 }
 
+nav button {
+  display: none !important;
+}
+
+.nav_items {
+  display: flex;
+  width: 100%;
+}
 
 @media screen and (max-width: 700px) {
   #selfie {
@@ -198,7 +319,38 @@ nav {
   #aboutMeText {
     margin: 0;
   }
+
+  .columns {
+    margin: 1em !important;
+  }
+
+  nav {
+    display: block;
+  }
+  
+  nav .nav_items {
+    transition: .3s;
+    margin-top: -100%;
+  }
+
+  nav .extended {
+    margin-top: 0;
+  }
+
+  nav .link {
+    width: 100%;
+  }
+
+  nav button {
+    display: inline-flex !important;
+  }
+  
+  .nav_items {
+    display: block;
+    width: 100%;
+  }
 }
+
 
 .mijnTalenten {
   background-color: #4e524fee;
@@ -361,12 +513,12 @@ nav {
 
 .contact_header {
   background-color: #681985e7;
-  padding: 2px;
+  padding: 3em 2px;
 }
 
 .contactList {
   background-color: #3c413dee;
-  padding: 2px;
+  padding: 0 2px 4em;
 }
 
 .contactList a {
@@ -399,7 +551,9 @@ nav {
 
 .modal-card>.modal-card-body {
   color: white;
-  background-image: url('andere_foto/image-46448313-navy-blue-background.jpg');
+  /* background-image: url('andere_foto/image-46448313-navy-blue-background.jpg');*/
+  /* background: #76a5fb; */
+  background: #efefef;
 }
 
 .modal-card-body .columns {
@@ -408,6 +562,7 @@ nav {
 
 .modal-card-body .columns .card {
   margin: 1em;
+  border-radius: 8px;
 }
 
 .button {
@@ -419,8 +574,9 @@ nav {
 }
 
 .imageWrapper.project_photo {
-
-  border: 1px solid #879396;
+  box-shadow: 2px -2px 7px 1px rgba(0, 0, 0, 0.3);
+  /* border: 1px solid #879396; */
+  border-radius: 12px;
 }
 
 /* .modal-card>.modal-card-foot {
@@ -508,4 +664,27 @@ nav {
 .imageWrapper>img:hover+i,
 .imageWrapper>i:hover {
   font-size: 160%;
+}
+
+.profile_bg {
+  background-image: url('andere_foto/2000b865-ab47-45b2-a79e-09ab8f769b7b.jfif');
+  background-size: cover;
+  background-blend-mode: screen;
+  background-color: rgba(255, 255, 255, 0.56);
+}
+
+.unity_photo {
+  position: absolute !important;
+  width: 76px;
+  top: 5px;
+  right: 5px;
+  z-index: 100;
+  min-height: 0px !important;
+  background-color: rgba(255,255,255,0.7);
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.ytp-expand-pause-overlay .ytp-pause-overlay {
+  display: none!important;
 }
