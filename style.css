@@ -169,7 +169,6 @@ nav {
   height: 100vh;
   width: 100%;
   background-color: cornflowerblue;
-  /* background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/EvVhCC0deijtsl1b4/videoblocks-programming-code-background-abstract-seamless-loop-animation_bklmxmhjw_thumbnail-full01.png'); */
   /* background-image: url('wallpaper.jpg'); */
   /* background-image: url('./code-wallpaper-38.jpg'); */
   background-image: url('andere_foto/20181111_140228.jpg');
@@ -687,4 +686,10 @@ nav button {
 
 .ytp-expand-pause-overlay .ytp-pause-overlay {
   display: none!important;
+}
+
+.carousel .carousel-navigation.is-overlay .carousel-nav-left,
+.carousel .carousel-navigation.is-overlay .carousel-nav-right {
+  background-color: rgba(230, 111, 74, 0.6);
+  font-size: 135%;
 }

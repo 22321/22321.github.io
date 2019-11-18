@@ -40,9 +40,9 @@ addModal('hex');
 addModal('mario');
 addModal('inventory');
 
-addModal('labyrinth');
-addModal('lucas');
-addModal('pukwudgie_ontwerp');
+// addModal('labyrinth');
+// addModal('lucas');
+// addModal('pukwudgie_ontwerp');
 addModal('schetsen');
 // addModal('runner');
 // addModal('siteGame');
